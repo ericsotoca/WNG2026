@@ -554,18 +554,22 @@ const App: React.FC = () => {
               <div>
                  <div className="mb-6 text-center lg:text-left">
                     <p className="text-xs uppercase text-slate-500 font-black tracking-[0.2em] mb-1">Besoin Global</p>
-                    <p className="text-4xl md:text-6xl font-black text-white">5 640 <span className="text-xl md:text-2xl">€</span></p>
+                    <p className="text-4xl md:text-6xl font-black text-white">4 615 <span className="text-xl md:text-2xl">€</span></p>
                  </div>
                  <div className="space-y-4">
-                    <div className="flex justify-between text-xs font-bold uppercase tracking-widest text-slate-400"><span>Transport Aérien</span><span>2 500 €</span></div>
-                    <div className="h-2 bg-white/5 rounded-full overflow-hidden"><div className="h-full bg-[#0055A4] rounded-full w-[44%]"></div></div>
-                    <div className="flex justify-between text-xs font-bold uppercase tracking-widest text-slate-400"><span>Logistique & Vie</span><span>1 500 €</span></div>
-                    <div className="h-2 bg-white/5 rounded-full overflow-hidden"><div className="h-full bg-[#EF4135] rounded-full w-[26%]"></div></div>
+                    <div className="flex justify-between text-xs font-bold uppercase tracking-widest text-slate-400"><span>Déplacements & Missions</span><span>2 750 €</span></div>
+                    <div className="h-2 bg-white/5 rounded-full overflow-hidden"><div className="h-full bg-[#0055A4] rounded-full w-[60%]"></div></div>
+                    
+                    <div className="flex justify-between text-xs font-bold uppercase tracking-widest text-slate-400"><span>Logistique & Locations</span><span>1 050 €</span></div>
+                    <div className="h-2 bg-white/5 rounded-full overflow-hidden"><div className="h-full bg-[#EF4135] rounded-full w-[23%]"></div></div>
+
+                    <div className="flex justify-between text-xs font-bold uppercase tracking-widest text-slate-400"><span>Équipement & Frais</span><span>815 €</span></div>
+                    <div className="h-2 bg-white/5 rounded-full overflow-hidden"><div className="h-full bg-[#D4AF37] rounded-full w-[17%]"></div></div>
                  </div>
               </div>
               <div className="space-y-5">
                  <h4 className="text-lg md:text-xl font-bold text-[#D4AF37] italic uppercase">Opportunité RSE</h4>
-                 <p className="text-slate-400 text-sm md:text-base leading-relaxed font-light">Investir dans un projet à haute valeur culturelle, humaine et éducative avec une visibilité mondiale unique.</p>
+                 <p className="text-slate-400 text-sm md:text-base leading-relaxed font-light">Investir dans un projet à haute valeur culturelle, humaine et éducative avec une visibilité mondiale unique basée sur un budget maîtrisé.</p>
                  <div className="inline-flex gap-4 items-center px-6 py-3 bg-white/5 rounded-full text-xs font-black uppercase text-white tracking-[0.2em]">
                     <ShieldCheck className="w-4 h-4 text-[#D4AF37]" />
                     Transparence Totale
