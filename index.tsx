@@ -5,7 +5,7 @@ import {
   Building2, Globe2, Trophy, Languages, GraduationCap, Flag, Flame, 
   ShieldCheck, ArrowRight, Eye, HandMetal, MapPinned, Users2, PlusCircle, 
   Landmark, Shield, Phone, LayoutGrid, Layers, Grid, Sparkles, Zap, 
-  History, Target, PlayCircle, ExternalLink, RefreshCw, Play, Quote
+  History, Target, PlayCircle, ExternalLink, RefreshCw, Play, Quote, Gift
 } from 'lucide-react';
 
 const VideoPlayer: React.FC = () => {
@@ -133,18 +133,18 @@ const App: React.FC = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 w-full">
             <div className="glass p-8 rounded-3xl border-t-4 border-[#0055A4] group hover:bg-white/5 transition-all">
               <Globe className="text-[#0055A4] w-12 h-12 mx-auto mb-6" />
-              <div className="text-4xl md:text-5xl font-black text-white mb-2">89</div>
-              <p className="text-slate-400 font-medium uppercase text-xs tracking-widest">Nations représentées</p>
+              <div className="text-4xl md:text-5xl font-black text-white mb-2">~100</div>
+              <p className="text-slate-400 font-medium uppercase text-[10px] md:text-xs tracking-widest">Pays représentés attendus</p>
             </div>
-            <div className="glass p-8 rounded-3xl border-t-4 border-white/40 group hover:bg-white/5 transition-all md:scale-105 bg-white/5">
-              <Zap className="text-[#D4AF37] w-12 h-12 mx-auto mb-6" />
-              <div className="text-4xl md:text-5xl font-black text-white mb-2">50M+</div>
-              <p className="text-slate-400 font-medium uppercase text-xs tracking-widest">Audience Cumulée</p>
+            <div className="glass p-8 rounded-3xl border-t-4 border-white/40 group hover:bg-white/5 transition-all md:scale-105 bg-white/5 shadow-2xl">
+              <Users className="text-[#D4AF37] w-12 h-12 mx-auto mb-6" />
+              <div className="text-4xl md:text-5xl font-black text-white mb-2">~3 000</div>
+              <p className="text-slate-400 font-medium uppercase text-[10px] md:text-xs tracking-widest leading-relaxed">Athlètes & Invités<br/>(Kits & Packages d'accueil)</p>
             </div>
             <div className="glass p-8 rounded-3xl border-t-4 border-[#EF4135] group hover:bg-white/5 transition-all">
-              <Users className="text-[#EF4135] w-12 h-12 mx-auto mb-6" />
-              <div className="text-4xl md:text-5xl font-black text-white mb-2">2500</div>
-              <p className="text-slate-400 font-medium uppercase text-xs tracking-widest">Athlètes d'élite</p>
+              <Tv className="text-[#EF4135] w-12 h-12 mx-auto mb-6" />
+              <div className="text-4xl md:text-5xl font-black text-white mb-2">50M+</div>
+              <p className="text-slate-400 font-medium uppercase text-[10px] md:text-xs tracking-widest">Audience Mondiale estimée</p>
             </div>
           </div>
         </section>
