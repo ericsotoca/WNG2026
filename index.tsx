@@ -257,7 +257,7 @@ const App: React.FC = () => {
               <div className="glass p-6 rounded-[2rem] border-t-4 border-[#D4AF37] flex-grow">
                 <div className="flex items-center gap-4 mb-4">
                   <div className="w-12 h-12 rounded-full border-2 border-[#D4AF37] p-0.5 overflow-hidden">
-                    <img src="https://picsum.photos/seed/clara/100" className="w-full h-full object-cover rounded-full" />
+                    <img src="https://image.jimcdn.com/cdn-cgi/image/width=320%2Cheight=10000%2Cfit=contain%2Cformat=png%2C/app/cms/storage/image/path/sb3e54bbe27069320/image/i5acaa91710cbb300/version/1771072008/image.png" className="w-full h-full object-cover rounded-full" />
                   </div>
                   <div>
                     <h4 className="font-black text-white text-lg leading-tight">Clara Sotoca</h4>
@@ -330,15 +330,15 @@ const App: React.FC = () => {
           <h2 className="text-4xl font-bold mb-12 text-white uppercase tracking-tighter">La Délégation 2026</h2>
           <div className="grid grid-cols-2 md:grid-cols-5 gap-8 w-full">
             {[
-              { name: "Hélène Mimenza", role: "Coach & Joueuse", c: "#0055A4", id: "h1" },
-              { name: "Clara Sotoca", role: "Joueuse Élite", c: "#D4AF37", id: "h2" },
+              { name: "Hélène Mimenza", role: "Coach & Joueuse", c: "#0055A4", id: "h1", img: "https://image.jimcdn.com/cdn-cgi/image/width=500%2Cformat=png/app/cms/storage/image/path/sb3e54bbe27069320/image/id714ab802c668909/version/1771072018/image.png" },
+              { name: "Clara Sotoca", role: "Joueuse Élite", c: "#D4AF37", id: "h2", img: "https://image.jimcdn.com/cdn-cgi/image/width=320%2Cheight=10000%2Cfit=contain%2Cformat=png%2C/app/cms/storage/image/path/sb3e54bbe27069320/image/i5acaa91710cbb300/version/1771072008/image.png" },
               { name: "Bénédicte V.O.", role: "Joueuse", c: "#EF4135", id: "h3" },
-              { name: "Colette Gueirard", role: "Joueuse", c: "#0055A4", id: "h4" },
-              { name: "Éric Sotoca", role: "Dir. Technique", c: "#EF4135", id: "h5" }
+              { name: "Colette Gueirard", role: "Joueuse", c: "#0055A4", id: "h4", img: "https://image.jimcdn.com/cdn-cgi/image/width=500%2Cformat=png/app/cms/storage/image/path/sb3e54bbe27069320/image/i47b56a7937366578/version/1771072189/image.png" },
+              { name: "Éric Sotoca", role: "Dir. Technique", c: "#EF4135", id: "h5", img: "https://scontent.fctt1-1.fna.fbcdn.net/v/t39.30808-6/510728177_10238121994250472_14731843692392084_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=__r_kI5hiKMQ7kNvwF4u-Sv&_nc_oc=AdlTqwRN6v0F_l32gxRVfk3XDA7xEr6TlZLJDi9mZA2mjzJWVGj2K2iEXvaNJWR-OoxblxTNhxv8pbtRJHfQ1IRd&_nc_zt=23&_nc_ht=scontent.fctt1-1.fna&_nc_gid=Kz51LUc_FNoy8eiHhSxdjA&oh=00_AfuGxxdjRNdfcw_oGMcslS_Tz5MwRdt52jYvTDpkDb9E4w&oe=69964908" }
             ].map((m, i) => (
               <div key={i} className="flex flex-col items-center group">
                 <div className={`w-28 h-28 md:w-36 md:h-36 rounded-2xl glass p-1 mb-4 border-b-4 transition-all group-hover:scale-105`} style={{borderColor: m.c}}>
-                  <img src={`https://picsum.photos/seed/${m.id}/300`} className="w-full h-full object-cover rounded-xl grayscale group-hover:grayscale-0 transition-all" alt={m.name} />
+                  <img src={m.img || `https://picsum.photos/seed/${m.id}/300`} className="w-full h-full object-cover rounded-xl grayscale group-hover:grayscale-0 transition-all" alt={m.name} />
                 </div>
                 <p className="font-bold text-sm text-white">{m.name}</p>
                 <p className={`text-[10px] uppercase font-black tracking-widest mt-1 opacity-60`} style={{color: m.c}}>{m.role}</p>
