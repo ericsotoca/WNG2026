@@ -4,10 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WNG 2026 - Délégation Française</title>
+    
     <script src="https://cdn.tailwindcss.com"></script>
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Babel Standalone : Indispensable pour transformer le .tsx en direct sur GitHub Pages -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
     <style>
         :root {
             --gold: #D4AF37;
@@ -88,6 +94,7 @@
             background: linear-gradient(to right, var(--france-blue) 33.33%, #fff 33.33%, #fff 66.66%, var(--france-red) 66.66%);
         }
     </style>
+    
     <script type="importmap">
 {
   "imports": {
@@ -104,6 +111,8 @@
 </head>
 <body>
     <div id="root"></div>
-    <script type="module" src="index.tsx"></script>
+    
+    <!-- Changement crucial : type="text/babel" pour que GitHub Pages accepte de charger le fichier -->
+    <script type="text/babel" data-type="module" data-presets="typescript,react" src="index.tsx"></script>
 </body>
 </html>
