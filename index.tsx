@@ -106,7 +106,7 @@ const FacebookReel: React.FC = () => {
       </div>
       
       <p className="mt-10 text-slate-400 text-sm md:text-base font-light italic max-w-2xl mx-auto leading-relaxed">
-        Découvrez la délégation française en entier, fièrement présentée lors de la cérémonie d'ouverture des World Nomad Games 2024 à Astana, parmi les nations du monde entier et devant 30 000 personnes.
+        Découvrez la délégation française, présentée lors de la cérémonie d'ouverture des World Nomad Games 2024 à Astana, devant 30 000 personnes !
       </p>
     </section>
   );
