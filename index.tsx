@@ -72,7 +72,7 @@ const VideoPlayer: React.FC = () => {
 
 const FacebookReel: React.FC = () => {
   return (
-    <section className="slide-enter flex flex-col items-center max-w-5xl w-full text-center py-8">
+    <section className="slide-enter flex flex-col items-center max-w-6xl w-full text-center py-8">
       <div className="flex items-center gap-3 mb-6 text-[#1877F2] font-black tracking-[0.3em] uppercase text-xs">
         <Facebook className="w-6 h-6" />
         <span>Instantanés Nomades</span>
@@ -83,8 +83,8 @@ const FacebookReel: React.FC = () => {
       </h2>
 
       <div className="w-full flex justify-center">
-        <div className="glass p-2 md:p-4 rounded-[2rem] border-white/10 shadow-2xl overflow-hidden max-w-full">
-          <div className="relative w-full max-w-[560px] aspect-[560/314] overflow-hidden rounded-[1.5rem]">
+        <div className="glass p-2 md:p-4 rounded-[2.5rem] border-white/10 shadow-2xl overflow-hidden w-full max-w-5xl">
+          <div className="relative w-full aspect-video md:aspect-[16/7] overflow-hidden rounded-[2rem]">
             <iframe 
               src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F897738559885442%2F&show_text=false&width=560&t=0" 
               width="100%" 
@@ -94,13 +94,14 @@ const FacebookReel: React.FC = () => {
               frameBorder="0" 
               allowFullScreen={true} 
               allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+              className="w-full h-full scale-[1.01]"
             ></iframe>
           </div>
         </div>
       </div>
       
-      <p className="mt-8 text-slate-400 text-xs md:text-sm font-light italic max-w-lg mx-auto leading-relaxed">
-        Découvrez les moments forts et l'énergie brute de la compétition à travers nos réseaux sociaux officiels.
+      <p className="mt-10 text-slate-400 text-sm md:text-base font-light italic max-w-2xl mx-auto leading-relaxed">
+        Découvrez les moments forts et l'énergie brute de la compétition à travers nos réseaux sociaux officiels. Une immersion totale au cœur de l'action.
       </p>
     </section>
   );
