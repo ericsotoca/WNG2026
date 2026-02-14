@@ -614,7 +614,7 @@ const App: React.FC = () => {
             <div className="glass p-6 md:p-8 rounded-3xl flex flex-col h-full border-2 border-[#D4AF37] md:scale-105 bg-white/5 shadow-2xl">
                <div className="bg-[#D4AF37] text-black text-[10px] font-black px-4 py-1 rounded-full w-fit mb-4 uppercase">Populaire</div>
                <h3 className="text-sm md:text-base font-black text-white uppercase mb-2 tracking-widest">Argent</h3>
-               <p className="text-3xl md:text-4xl font-black text-white mb-6">1 500 €</p>
+               <p className="text-3xl md:text-4xl font-black text-white mb-6">1 000 €</p>
                <ul className="text-xs space-y-3 text-white/80 mb-8 flex-grow">
                  <li className="flex gap-2"><Check className="text-[#D4AF37] w-4 h-4 mt-0.5" /> Pack Bronze Inclus</li>
                  <li className="flex gap-2"><Check className="text-[#D4AF37] w-4 h-4 mt-0.5" /> Logo Tenue Officielle</li>
@@ -624,7 +624,7 @@ const App: React.FC = () => {
             </div>
             <div className="glass p-6 md:p-8 rounded-3xl flex flex-col h-full border border-white/5">
                <h3 className="text-sm md:text-base font-black text-[#EF4135] uppercase mb-2 tracking-widest">Or / Platine</h3>
-               <p className="text-3xl md:text-4xl font-black text-white mb-6">3 000 € +</p>
+               <p className="text-3xl md:text-4xl font-black text-white mb-6">1 500 € +</p>
                <ul className="text-xs space-y-3 text-slate-400 mb-8 flex-grow">
                  <li className="flex gap-2"><Check className="text-[#EF4135] w-4 h-4 mt-0.5" /> Pack Argent Inclus</li>
                  <li className="flex gap-2"><Check className="text-[#EF4135] w-4 h-4 mt-0.5" /> Atelier Team Building</li>
