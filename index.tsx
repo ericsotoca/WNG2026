@@ -5,7 +5,8 @@ import {
   Building2, Globe2, Trophy, Languages, GraduationCap, Flag, Flame, 
   ShieldCheck, ArrowRight, Eye, HandMetal, MapPinned, Users2, PlusCircle, 
   Landmark, Shield, Phone, LayoutGrid, Layers, Grid, Sparkles, Zap, 
-  History, Target, PlayCircle, ExternalLink, RefreshCw, Play, Quote, Gift
+  History, Target, PlayCircle, ExternalLink, RefreshCw, Play, Quote, Gift,
+  Facebook
 } from 'lucide-react';
 
 const VideoPlayer: React.FC = () => {
@@ -69,9 +70,45 @@ const VideoPlayer: React.FC = () => {
   );
 };
 
+const FacebookReel: React.FC = () => {
+  return (
+    <section className="slide-enter flex flex-col items-center max-w-5xl w-full text-center py-8">
+      <div className="flex items-center gap-3 mb-6 text-[#1877F2] font-black tracking-[0.3em] uppercase text-xs">
+        <Facebook className="w-6 h-6" />
+        <span>Instantanés Nomades</span>
+      </div>
+      
+      <h2 className="text-3xl md:text-5xl font-black mb-10 text-white uppercase italic tracking-tighter leading-none">
+         L'aventure <br/><span className="text-[#1877F2]">en mouvement</span>
+      </h2>
+
+      <div className="w-full flex justify-center">
+        <div className="glass p-2 md:p-4 rounded-[2rem] border-white/10 shadow-2xl overflow-hidden max-w-full">
+          <div className="relative w-full max-w-[560px] aspect-[560/314] overflow-hidden rounded-[1.5rem]">
+            <iframe 
+              src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F897738559885442%2F&show_text=false&width=560&t=0" 
+              width="100%" 
+              height="100%" 
+              style={{ border: 'none', overflow: 'hidden' }} 
+              scrolling="no" 
+              frameBorder="0" 
+              allowFullScreen={true} 
+              allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+      
+      <p className="mt-8 text-slate-400 text-xs md:text-sm font-light italic max-w-lg mx-auto leading-relaxed">
+        Découvrez les moments forts et l'énergie brute de la compétition à travers nos réseaux sociaux officiels.
+      </p>
+    </section>
+  );
+};
+
 const App: React.FC = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
-  const totalSlides = 16;
+  const totalSlides = 17;
 
   const nextSlide = useCallback(() => {
     setCurrentSlide(prev => (prev < totalSlides - 1 ? prev + 1 : 0));
@@ -232,7 +269,7 @@ const App: React.FC = () => {
             <div className="lg:col-span-8 relative group overflow-hidden rounded-[2.5rem] glass p-2 border-[#D4AF37]/20 border">
               <div className="w-full h-full min-h-[220px] md:min-h-[250px] overflow-hidden rounded-[2.2rem] relative bg-white/5">
                 <img 
-                  src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXeC2JDBmioqG3ZQAnWBQvY-m9DRJ2_2hsGneA1SNwgny551XeauuxCkoJu2nKDMCNAjxDan4CTnxYf_2bxf3N0UYpnHPjOw0dtsFj252gcQiPkMz5aI1NemiXrQozwG8ptYPP72CdswPaOgr4SgNysTnS4?key=4Mj4bJk_67OZUgFqKr5Mhw" 
+                  src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXeC2JDBmioqG3ZQAnWBQvY-m9DRJ2_2hsGneA1SNwgny551XeauuxCkoJu2nKDMCNAjxDan47nxYf_2bxf3N0UYpnHPjOw0dtsFj252gcQiPkMz5aI1NemiXrQozwG8ptYPP72CdswPaOgr4SgNysTnS4?key=4Mj4bJk_67OZUgFqKr5Mhw" 
                   alt="Délégation France Press" 
                   className="w-full h-full object-contain grayscale transition-all duration-700 group-hover:grayscale-0 group-hover:scale-105" 
                 />
@@ -555,6 +592,7 @@ const App: React.FC = () => {
         </section>
       );
       case 15: return <VideoPlayer />;
+      case 16: return <FacebookReel />;
       default: return null;
     }
   };
