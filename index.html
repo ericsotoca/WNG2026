@@ -43,9 +43,6 @@
             background-size: 40px 40px;
         }
 
-        .text-gold { color: var(--gold); }
-        .bg-gold { background-color: var(--gold); }
-        
         .progress-bar {
             height: 4px;
             transition: width 0.4s ease;
@@ -64,9 +61,15 @@
             to { opacity: 1; transform: translateY(0) scale(1); }
         }
 
-        .flip-card { perspective: 1000px; height: 350px; }
+        .tricolore-strip {
+            height: 3px;
+            width: 60px;
+            background: linear-gradient(to right, var(--france-blue) 33.33%, #fff 33.33%, #fff 66.66%, var(--france-red) 66.66%);
+        }
+
+        .flip-card { perspective: 1000px; height: 300px; }
         .flip-card-inner {
-            transition: transform 0.8s;
+            transition: transform 0.6s;
             transform-style: preserve-3d;
             height: 100%;
             position: relative;
@@ -85,12 +88,6 @@
             padding: 1.5rem;
         }
         .flip-card-back { transform: rotateY(180deg); }
-
-        .tricolore-strip {
-            height: 3px;
-            width: 60px;
-            background: linear-gradient(to right, var(--france-blue) 33.33%, #fff 33.33%, #fff 66.66%, var(--france-red) 66.66%);
-        }
     </style>
     
     <script type="importmap">
@@ -109,6 +106,6 @@
 </head>
 <body class="nomad-pattern">
     <div id="root"></div>
-    <script type="text/babel" data-type="module" data-presets="typescript,react" src="index.tsx?v=3"></script>
+    <script type="text/babel" data-type="module" data-presets="typescript,react" src="index.tsx"></script>
 </body>
 </html>
