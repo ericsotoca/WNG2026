@@ -166,7 +166,7 @@ const App: React.FC = () => {
             </div>
           </div>
           <div className="flex-1">
-             <img src="https://images.unsplash.com/photo-1540963168233-a80082f42079?auto=format&fit=crop&q=80&w=800" className="rounded-[2rem] glass p-2 grayscale hover:grayscale-0 transition-all duration-700 w-full" alt="Culture" />
+             <img src="https://eurasia.travel/wp-content/uploads/2024/09/World-Nomad-Games-in-Kyrgyzstan-19.jpg" className="rounded-[2rem] glass p-2 grayscale hover:grayscale-0 transition-all duration-700 w-full" alt="Culture" />
           </div>
         </section>
       );
@@ -332,16 +332,16 @@ const App: React.FC = () => {
             {[
               { name: "Hélène Mimenza", role: "Coach & Joueuse", c: "#0055A4", id: "h1", img: "https://image.jimcdn.com/cdn-cgi/image/width=500%2Cformat=png/app/cms/storage/image/path/sb3e54bbe27069320/image/id714ab802c668909/version/1771072018/image.png" },
               { name: "Clara Sotoca", role: "Joueuse Élite", c: "#D4AF37", id: "h2", img: "https://image.jimcdn.com/cdn-cgi/image/width=320%2Cheight=10000%2Cfit=contain%2Cformat=png%2C/app/cms/storage/image/path/sb3e54bbe27069320/image/i5acaa91710cbb300/version/1771072008/image.png" },
-              { name: "Bénédicte V.O.", role: "Joueuse", c: "#EF4135", id: "h3" },
+              { name: "Bénédicte V.O.", role: "Joueuse", c: "#EF4135", id: "h3", img: "https://image.jimcdn.com/cdn-cgi/image/width=500%2Cformat=png/app/cms/storage/image/path/sb3e54bbe27069320/image/i635576e827f3d56f/version/1771073221/image.png" },
               { name: "Colette Gueirard", role: "Joueuse", c: "#0055A4", id: "h4", img: "https://image.jimcdn.com/cdn-cgi/image/width=500%2Cformat=png/app/cms/storage/image/path/sb3e54bbe27069320/image/i47b56a7937366578/version/1771072189/image.png" },
-              { name: "Éric Sotoca", role: "Dir. Technique", c: "#EF4135", id: "h5", img: "https://scontent.fctt1-1.fna.fbcdn.net/v/t39.30808-6/510728177_10238121994250472_14731843692392084_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=__r_kI5hiKMQ7kNvwF4u-Sv&_nc_oc=AdlTqwRN6v0F_l32gxRVfk3XDA7xEr6TlZLJDi9mZA2mjzJWVGj2K2iEXvaNJWR-OoxblxTNhxv8pbtRJHfQ1IRd&_nc_zt=23&_nc_ht=scontent.fctt1-1.fna&_nc_gid=Kz51LUc_FNoy8eiHhSxdjA&oh=00_AfuGxxdjRNdfcw_oGMcslS_Tz5MwRdt52jYvTDpkDb9E4w&oe=69964908" }
+              { name: "Éric Sotoca", role: "Dir. Technique & Joueur", c: "#EF4135", id: "h5", img: "https://scontent.fctt1-1.fna.fbcdn.net/v/t39.30808-6/510728177_10238121994250472_14731843692392084_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=__r_kI5hiKMQ7kNvwF4u-Sv&_nc_oc=AdlTqwRN6v0F_l32gxRVfk3XDA7xEr6TlZLJDi9mZA2mjzJWVGj2K2iEXvaNJWR-OoxblxTNhxv8pbtRJHfQ1IRd&_nc_zt=23&_nc_ht=scontent.fctt1-1.fna&_nc_gid=Kz51LUc_FNoy8eiHhSxdjA&oh=00_AfuGxxdjRNdfcw_oGMcslS_Tz5MwRdt52jYvTDpkDb9E4w&oe=69964908" }
             ].map((m, i) => (
               <div key={i} className="flex flex-col items-center group">
                 <div className={`w-28 h-28 md:w-36 md:h-36 rounded-2xl glass p-1 mb-4 border-b-4 transition-all group-hover:scale-105`} style={{borderColor: m.c}}>
                   <img src={m.img || `https://picsum.photos/seed/${m.id}/300`} className="w-full h-full object-cover rounded-xl grayscale group-hover:grayscale-0 transition-all" alt={m.name} />
                 </div>
-                <p className="font-bold text-sm text-white">{m.name}</p>
-                <p className={`text-[10px] uppercase font-black tracking-widest mt-1 opacity-60`} style={{color: m.c}}>{m.role}</p>
+                <p className="font-bold text-sm text-white text-center">{m.name}</p>
+                <p className={`text-[10px] uppercase font-black tracking-widest mt-1 opacity-60 text-center`} style={{color: m.c}}>{m.role}</p>
               </div>
             ))}
           </div>
@@ -603,7 +603,7 @@ const App: React.FC = () => {
                 <input type="text" placeholder="Organisation / Entreprise" className="w-full bg-white/5 border border-white/10 rounded-xl p-4 focus:border-[#D4AF37] outline-none text-sm transition-all focus:bg-white/10" />
                 <input type="email" placeholder="Email professionnel" className="w-full bg-white/5 border border-white/10 rounded-xl p-4 focus:border-[#D4AF37] outline-none text-sm transition-all focus:bg-white/10" />
                 <textarea rows={3} placeholder="Votre projet de soutien..." className="w-full bg-white/5 border border-white/10 rounded-xl p-4 focus:border-[#D4AF37] outline-none text-sm transition-all focus:bg-white/10"></textarea>
-                <button className="w-full bg-gradient-to-r from-[#0055A4] via-white to-[#EF4135] py-4 rounded-xl text-black font-black uppercase text-lg hover:scale-[1.02] active:scale-95 transition-all shadow-xl shadow-red-900/10 tracking-widest">
+                <button className="w-full bg-gradient-to-r from-[#0055A4] via-white to-[#EF4135] py-4 rounded-xl text-black font-black uppercase text-lg hover:scale-[1.02] active:scale-95 transition-all shadow-xl shadow-red-900/20 tracking-widest">
                   Valider ma demande
                 </button>
               </form>
