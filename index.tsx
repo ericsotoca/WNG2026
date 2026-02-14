@@ -186,7 +186,8 @@ const App: React.FC = () => {
           </div>
         </section>
       );
-      case 2: return (
+      case 2: return <FacebookReel />;
+      case 3: return (
         <section className="slide-enter flex flex-col md:flex-row items-center gap-10 max-w-6xl w-full text-left py-8">
           <div className="flex-1 space-y-6">
             <h2 className="text-2xl md:text-4xl font-bold text-white uppercase italic tracking-tighter">Immersion Culturelle</h2>
@@ -203,7 +204,7 @@ const App: React.FC = () => {
           </div>
         </section>
       );
-      case 3: return (
+      case 4: return (
         <section className="slide-enter flex flex-col items-center max-w-6xl w-full py-8">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 w-full items-stretch">
             <div className="lg:col-span-8 flex flex-col justify-center text-left space-y-10">
@@ -259,25 +260,25 @@ const App: React.FC = () => {
           </div>
         </section>
       );
-      case 4: return (
+      case 5: return (
         <section className="slide-enter flex flex-col items-center max-w-6xl w-full text-center py-8">
           <h2 className="text-3xl md:text-5xl font-black mb-8 text-white uppercase italic tracking-tighter">
             Résultats <span className="text-[#D4AF37]">Historiques 2024</span>
           </h2>
           
           <div className="w-full grid grid-cols-1 lg:grid-cols-12 gap-6 items-stretch">
-            <div className="lg:col-span-8 relative group overflow-hidden rounded-[2.5rem] glass p-2 border-[#D4AF37]/20 border min-h-[250px] md:min-h-[350px]">
-              <div className="w-full h-full overflow-hidden rounded-[2.2rem] relative bg-white/5">
+            <div className="lg:col-span-8 relative group overflow-hidden rounded-[2.5rem] glass p-2 border-[#D4AF37]/20 border min-h-[280px] md:min-h-[420px]">
+              <div className="w-full h-full overflow-hidden rounded-[2.2rem] relative bg-white/5 shadow-2xl">
                 <img 
-                  src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXeC2JDBmioqG3ZQAnWBQvY-m9DRJ2_2hsGneA1SNwgny551XeauuxCkoJu2nKDMCNAjxDan47nxYf_2bxf3N0UYpnHPjOw0dtsFj252gcQiPkMz5aI1NemiXrQozwG8ptYPP72CdswPaOgr4SgNysTnS4?key=4Mj4bJk_67OZUgFqKr5Mhw" 
+                  src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXeC2JDBmioqG3ZQAnWBQvY-m9DRJ2_2hsGneA1SNwgny551XeauuxCkoJu2nKDMCNAjxDan4CTnxYf_2bxf3N0UYpnHPjOw0dtsFj252gcQiPkMz5aI1NemiXrQozwG8ptYPP72CdswPaOgr4SgNysTnS4?key=4Mj4bJk_67OZUgFqKr5Mhw" 
                   alt="Délégation France Press" 
                   className="w-full h-full object-cover grayscale transition-all duration-700 group-hover:grayscale-0 group-hover:scale-105" 
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#020617]/90 via-transparent to-transparent opacity-80"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-[#020617] via-transparent to-transparent opacity-80"></div>
                 <div className="absolute bottom-6 left-8 right-8 text-left">
                   <div className="tricolore-strip mb-3"></div>
-                  <h3 className="text-xl md:text-2xl font-black text-white uppercase italic tracking-tighter leading-tight">Une Synergie <br className="md:hidden"/>Historique</h3>
-                  <p className="text-white/60 text-[10px] font-bold uppercase tracking-[0.2em] mt-1">Délégation Officielle France • World Nomad Games</p>
+                  <h3 className="text-xl md:text-3xl font-black text-white uppercase italic tracking-tighter leading-tight">Une Synergie <br className="md:hidden"/>Historique</h3>
+                  <p className="text-white/60 text-[10px] md:text-xs font-bold uppercase tracking-[0.2em] mt-1">Délégation Officielle France • World Nomad Games</p>
                 </div>
               </div>
             </div>
@@ -312,7 +313,7 @@ const App: React.FC = () => {
           </div>
         </section>
       );
-      case 5: return (
+      case 6: return (
         <section className="slide-enter flex flex-col items-center max-w-6xl w-full text-center py-8">
           <h2 className="text-2xl md:text-5xl font-black mb-10 text-white uppercase italic tracking-tighter">
             Ils nous <span className="text-[#D4AF37]">soutiennent</span>
@@ -335,7 +336,7 @@ const App: React.FC = () => {
           </div>
           <div className="mt-12 flex justify-center">
             <button 
-              onClick={() => setCurrentSlide(14)}
+              onClick={() => setCurrentSlide(15)}
               className="group flex items-center gap-4 px-8 py-4 border-2 border-dashed border-white/10 rounded-full hover:border-[#D4AF37]/40 transition-all active:scale-95"
             >
               <PlusCircle className="w-5 h-5 text-white group-hover:text-[#D4AF37]" />
@@ -344,7 +345,7 @@ const App: React.FC = () => {
           </div>
         </section>
       );
-      case 6: return (
+      case 7: return (
         <section className="slide-enter flex flex-col items-center max-w-6xl w-full py-8">
           <h2 className="text-2xl md:text-3xl font-bold mb-10 text-white uppercase tracking-tighter text-center">La Délégation 2026</h2>
           <div className="grid grid-cols-2 md:grid-cols-5 gap-6 md:gap-8 w-full">
@@ -366,7 +367,7 @@ const App: React.FC = () => {
           </div>
         </section>
       );
-      case 7: return (
+      case 8: return (
         <section className="slide-enter flex flex-col items-center max-w-6xl w-full py-8">
           <h2 className="text-2xl md:text-3xl font-bold mb-10 text-white uppercase italic tracking-tighter text-center">Les Disciplines Maîtresses</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 w-full">
@@ -408,7 +409,7 @@ const App: React.FC = () => {
           </div>
         </section>
       );
-      case 8: return (
+      case 9: return (
         <section className="slide-enter flex flex-col items-center max-w-5xl w-full text-left py-8">
            <h2 className="text-2xl md:text-3xl font-bold mb-10 text-white text-center uppercase italic tracking-tighter">Objectifs 2026</h2>
            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 w-full">
@@ -431,7 +432,7 @@ const App: React.FC = () => {
            </div>
         </section>
       );
-      case 9: return (
+      case 10: return (
         <section className="slide-enter flex flex-col items-center max-w-5xl w-full text-center py-8">
           <h2 className="text-2xl md:text-3xl font-bold mb-10 text-white uppercase italic tracking-tighter text-center">Calendrier Opérationnel</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 md:gap-8 w-full">
@@ -450,7 +451,7 @@ const App: React.FC = () => {
           </div>
         </section>
       );
-      case 10: return (
+      case 11: return (
         <section className="slide-enter flex flex-col items-center max-w-5xl w-full py-8">
            <h2 className="text-2xl md:text-3xl font-bold mb-8 text-white uppercase italic tracking-tighter">Budget & Investissement</h2>
            <div className="w-full glass p-6 md:p-10 rounded-[2rem] md:rounded-[3rem] grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 text-left items-center">
@@ -477,7 +478,7 @@ const App: React.FC = () => {
            </div>
         </section>
       );
-      case 11: return (
+      case 12: return (
         <section className="slide-enter flex flex-col items-center max-w-6xl w-full text-center py-8">
           <h2 className="text-2xl md:text-3xl font-bold mb-10 text-white uppercase italic tracking-tighter">Pourquoi nous rejoindre ?</h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 w-full">
@@ -496,7 +497,7 @@ const App: React.FC = () => {
           </div>
         </section>
       );
-      case 12: return (
+      case 13: return (
         <section className="slide-enter flex flex-col items-center max-w-6xl w-full py-8">
           <h2 className="text-2xl md:text-3xl font-bold mb-10 text-white uppercase italic tracking-tighter">Offres de Partenariat</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 w-full text-left">
@@ -508,7 +509,7 @@ const App: React.FC = () => {
                  <li className="flex gap-2"><Check className="text-[#0055A4] w-4 h-4 mt-0.5" /> Mentions réseaux</li>
                  <li className="flex gap-2"><Check className="text-[#0055A4] w-4 h-4 mt-0.5" /> Certificat Mécénat</li>
                </ul>
-               <button onClick={() => setCurrentSlide(14)} className="w-full py-4 rounded-xl border border-white/10 hover:bg-white/5 uppercase text-xs font-black tracking-widest">Choisir</button>
+               <button onClick={() => setCurrentSlide(15)} className="w-full py-4 rounded-xl border border-white/10 hover:bg-white/5 uppercase text-xs font-black tracking-widest">Choisir</button>
             </div>
             <div className="glass p-6 md:p-8 rounded-3xl flex flex-col h-full border-2 border-[#D4AF37] md:scale-105 bg-white/5 shadow-2xl">
                <div className="bg-[#D4AF37] text-black text-[10px] font-black px-4 py-1 rounded-full w-fit mb-4 uppercase">Populaire</div>
@@ -519,7 +520,7 @@ const App: React.FC = () => {
                  <li className="flex gap-2"><Check className="text-[#D4AF37] w-4 h-4 mt-0.5" /> Logo Tenue Officielle</li>
                  <li className="flex gap-2"><Check className="text-[#D4AF37] w-4 h-4 mt-0.5" /> Branding tournois</li>
                </ul>
-               <button onClick={() => setCurrentSlide(14)} className="w-full py-4 rounded-xl bg-[#D4AF37] text-black uppercase text-xs font-black tracking-widest hover:scale-105 transition-transform shadow-lg">Participer</button>
+               <button onClick={() => setCurrentSlide(15)} className="w-full py-4 rounded-xl bg-[#D4AF37] text-black uppercase text-xs font-black tracking-widest hover:scale-105 transition-transform shadow-lg">Participer</button>
             </div>
             <div className="glass p-6 md:p-8 rounded-3xl flex flex-col h-full border border-white/5">
                <h3 className="text-sm md:text-base font-black text-[#EF4135] uppercase mb-2 tracking-widest">Or / Platine</h3>
@@ -529,12 +530,12 @@ const App: React.FC = () => {
                  <li className="flex gap-2"><Check className="text-[#EF4135] w-4 h-4 mt-0.5" /> Atelier Team Building</li>
                  <li className="flex gap-2"><Check className="text-[#EF4135] w-4 h-4 mt-0.5" /> Logo Principal</li>
                </ul>
-               <button onClick={() => setCurrentSlide(14)} className="w-full py-4 rounded-xl border border-[#EF4135] text-[#EF4135] uppercase text-xs font-black tracking-widest hover:bg-[#EF4135]/10">Contact</button>
+               <button onClick={() => setCurrentSlide(15)} className="w-full py-4 rounded-xl border border-[#EF4135] text-[#EF4135] uppercase text-xs font-black tracking-widest hover:bg-[#EF4135]/10">Contact</button>
             </div>
           </div>
         </section>
       );
-      case 13: return (
+      case 14: return (
         <section className="slide-enter flex flex-col items-center max-w-6xl w-full text-center py-8">
           <h2 className="text-2xl md:text-3xl font-bold mb-4 text-white uppercase italic tracking-tighter text-center">Le Club des Partenaires</h2>
           <div className="tricolore-strip mx-auto mb-10"></div>
@@ -549,18 +550,18 @@ const App: React.FC = () => {
               <Shield className="w-8 md:w-12 h-8 md:h-12 text-white/40 mb-2" />
               <p className="font-bold text-xs md:text-sm">Comité WNG <br/>Officiel</p>
             </div>
-            <div className="glass p-5 rounded-[1.5rem] md:rounded-[2rem] flex flex-col items-center justify-center border-dashed border-2 border-white/10 h-40 md:h-48 group cursor-pointer hover:border-[#D4AF37]/30 transition-all" onClick={() => setCurrentSlide(14)}>
+            <div className="glass p-5 rounded-[1.5rem] md:rounded-[2rem] flex flex-col items-center justify-center border-dashed border-2 border-white/10 h-40 md:h-48 group cursor-pointer hover:border-[#D4AF37]/30 transition-all" onClick={() => setCurrentSlide(15)}>
               <PlusCircle className="w-8 md:w-10 h-8 md:h-10 text-white/10 group-hover:text-[#D4AF37] transition-colors mb-2" />
               <p className="text-[10px] md:text-xs uppercase font-bold text-white/20 group-hover:text-[#D4AF37] text-center">Votre Logo <br/>Ici</p>
             </div>
-            <div className="glass p-5 rounded-[1.5rem] md:rounded-[2rem] flex flex-col items-center justify-center border-dashed border-2 border-white/10 h-40 md:h-48 group cursor-pointer hover:border-[#D4AF37]/30 transition-all" onClick={() => setCurrentSlide(14)}>
+            <div className="glass p-5 rounded-[1.5rem] md:rounded-[2rem] flex flex-col items-center justify-center border-dashed border-2 border-white/10 h-40 md:h-48 group cursor-pointer hover:border-[#D4AF37]/30 transition-all" onClick={() => setCurrentSlide(15)}>
               <PlusCircle className="w-8 md:w-10 h-8 md:h-10 text-white/10 group-hover:text-[#D4AF37] transition-colors mb-2" />
               <p className="text-[10px] md:text-xs uppercase font-bold text-white/20 group-hover:text-[#D4AF37] text-center">Rejoindre <br/>le Club</p>
             </div>
           </div>
         </section>
       );
-      case 14: return (
+      case 15: return (
         <section className="slide-enter flex flex-col md:flex-row items-center gap-10 max-w-6xl w-full text-left py-8">
           <div className="flex-1 space-y-6 text-left">
             <div className="tricolore-strip mb-4"></div>
@@ -591,8 +592,7 @@ const App: React.FC = () => {
           </div>
         </section>
       );
-      case 15: return <VideoPlayer />;
-      case 16: return <FacebookReel />;
+      case 16: return <VideoPlayer />;
       default: return null;
     }
   };
