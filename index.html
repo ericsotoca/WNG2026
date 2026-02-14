@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
 
-    <!-- Babel Standalone : Permet de transformer le TSX directement dans le navigateur -->
+    <!-- Babel Standalone : Indispensable pour transformer le TSX sur GitHub Pages -->
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 
     <style>
@@ -111,6 +111,8 @@
 </head>
 <body>
     <div id="root"></div>
-    <script type="text/babel" data-type="module" data-presets="typescript,react" src="index.tsx"></script>
+    
+    <!-- Ajout de ?v=2 pour forcer le navigateur à ignorer l'ancienne version cachée -->
+    <script type="text/babel" data-type="module" data-presets="typescript,react" src="index.tsx?v=2"></script>
 </body>
 </html>
