@@ -12,3 +12,10 @@ export interface QuizQuestion {
   options: string[];
   correct: number;
 }
+
+export interface SponsorPackage {
+  name: string;
+  price: string;
+  benefits: string[];
+  color: string;
+}
