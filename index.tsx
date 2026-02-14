@@ -6,7 +6,7 @@ import {
   ShieldCheck, ArrowRight, Eye, HandMetal, MapPinned, Users2, PlusCircle, 
   Landmark, Shield, Phone, LayoutGrid, Layers, Grid, Sparkles, Zap, 
   History, Target, PlayCircle, ExternalLink, RefreshCw, Play, Quote, Gift,
-  Facebook
+  Facebook, Medal
 } from 'lucide-react';
 
 const VideoPlayer: React.FC = () => {
@@ -262,53 +262,146 @@ const App: React.FC = () => {
         </section>
       );
       case 5: return (
-        <section className="slide-enter flex flex-col items-center max-w-6xl w-full text-center py-8">
-          <h2 className="text-3xl md:text-5xl font-black mb-8 text-white uppercase italic tracking-tighter">
-            Résultats <span className="text-[#D4AF37]">Historiques 2024</span>
-          </h2>
+        <section className="slide-enter flex flex-col items-center max-w-6xl w-full text-center py-4">
+          <div className="flex items-center gap-3 mb-6 text-[#D4AF37] font-black tracking-[0.3em] uppercase text-[10px] md:text-xs">
+            <Trophy className="w-5 h-5 md:w-6 md:h-6" />
+            <span>Tableau d'Honneur • Excellence & Résultats</span>
+          </div>
           
-          <div className="w-full grid grid-cols-1 lg:grid-cols-12 gap-6 items-stretch">
-            <div className="lg:col-span-8 relative group overflow-hidden rounded-[2.5rem] glass p-2 border-[#D4AF37]/20 border min-h-[280px] md:min-h-[420px]">
-              <div className="w-full h-full overflow-hidden rounded-[2.2rem] relative bg-white/5 shadow-2xl">
+          <div className="w-full overflow-y-auto max-h-[85vh] pr-2 custom-scrollbar space-y-8">
+            {/* Image Highlight - Fully visible press article */}
+            <div className="w-full relative group overflow-hidden rounded-[2.5rem] glass p-2 border-[#D4AF37]/20 border">
+              <div className="w-full overflow-hidden rounded-[2.2rem] relative bg-white/5 shadow-2xl flex flex-col">
                 <img 
                   src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXeC2JDBmioqG3ZQAnWBQvY-m9DRJ2_2hsGneA1SNwgny551XeauuxCkoJu2nKDMCNAjxDan4CTnxYf_2bxf3N0UYpnHPjOw0dtsFj252gcQiPkMz5aI1NemiXrQozwG8ptYPP72CdswPaOgr4SgNysTnS4?key=4Mj4bJk_67OZUgFqKr5Mhw" 
                   alt="Délégation France Press" 
-                  className="w-full h-full object-cover grayscale transition-all duration-700 group-hover:grayscale-0 group-hover:scale-105" 
+                  className="w-full h-auto object-contain grayscale transition-all duration-700 group-hover:grayscale-0" 
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#020617] via-transparent to-transparent opacity-80"></div>
-                <div className="absolute bottom-6 left-8 right-8 text-left">
+                <div className="p-6 text-left bg-gradient-to-r from-black/80 to-transparent">
                   <div className="tricolore-strip mb-3"></div>
-                  <h3 className="text-xl md:text-3xl font-black text-white uppercase italic tracking-tighter leading-tight">Une Synergie <br className="md:hidden"/>Historique</h3>
+                  <h3 className="text-xl md:text-3xl font-black text-white uppercase italic tracking-tighter leading-tight">Palmarès Mondial</h3>
                   <p className="text-white/60 text-[10px] md:text-xs font-bold uppercase tracking-[0.2em] mt-1">Délégation Officielle France • World Nomad Games</p>
                 </div>
               </div>
             </div>
 
-            <div className="lg:col-span-4 flex flex-col gap-4 text-left">
-              <div className="glass p-5 md:p-6 rounded-[2rem] border-t-4 border-[#D4AF37] flex-grow shadow-xl">
-                <div className="flex items-center gap-4 mb-4">
-                  <div className="w-10 h-10 md:w-12 md:h-12 rounded-full border-2 border-[#D4AF37] p-0.5 overflow-hidden shadow-lg">
-                    <img src="https://image.jimcdn.com/cdn-cgi/image/width=320%2Cheight=10000%2Cfit=contain%2Cformat=png%2C/app/cms/storage/image/path/sb3e54bbe27069320/image/i5acaa91710cbb300/version/1771072008/image.png" className="w-full h-full object-cover rounded-full" />
-                  </div>
-                  <div>
-                    <h4 className="font-black text-white text-base md:text-lg leading-tight">Clara Sotoca</h4>
-                    <p className="text-[#D4AF37] text-[10px] md:text-[11px] font-black uppercase tracking-wider">5<sup>ème</sup> Place Mondiale</p>
-                  </div>
+            <div className="flex flex-col gap-8 w-full max-w-4xl mx-auto">
+              {/* World Nomad Games Block */}
+              <div className="glass p-6 md:p-8 rounded-[2.5rem] border-t-8 border-[#0055A4] flex flex-col text-left group w-full">
+                <div className="flex justify-between items-start mb-6">
+                   <div>
+                      <h3 className="text-xl md:text-2xl font-black text-white uppercase italic tracking-tight">Astana 2024</h3>
+                      <p className="text-[#0055A4] text-[10px] font-black uppercase tracking-widest">World Nomad Games • Kazakhstan</p>
+                   </div>
+                   <div className="w-10 h-10 md:w-12 md:h-12 bg-[#0055A4]/10 rounded-xl flex items-center justify-center border border-[#0055A4]/20">
+                      <Globe className="text-[#0055A4] w-6 h-6" />
+                   </div>
                 </div>
-                <p className="text-slate-400 text-xs md:text-sm font-light leading-relaxed">
-                  Exploit réalisé à Astana face à l'élite mondiale de l'Awalé. Performance historique pour une délégation française.
-                </p>
+
+                <div className="space-y-6 flex-grow">
+                   {/* Awalé Astana */}
+                   <div className="space-y-4">
+                      <div className="flex items-center gap-3">
+                         <div className="w-1 bg-[#D4AF37] h-4"></div>
+                         <h4 className="text-sm font-black text-slate-200 uppercase tracking-widest">Discipline Awalé (Owari)</h4>
+                      </div>
+                      <div className="space-y-3">
+                         <div className="glass p-4 rounded-2xl border-l-4 border-[#D4AF37] hover:bg-white/5 transition-all">
+                            <p className="text-white font-black text-sm">🥈 Clara Sotoca : 5<sup>e</sup> place / 40 athlètes</p>
+                            <p className="text-[10px] text-slate-400 mt-1">Performance exceptionnelle, engagement et maîtrise du jeu. 👏</p>
+                         </div>
+                         <div className="glass p-4 rounded-2xl border-l-4 border-slate-600">
+                            <p className="text-white font-black text-sm">Eric Sotoca : 22<sup>e</sup> place / 50 athlètes</p>
+                            <p className="text-[10px] text-slate-400 mt-1">Progression notable et apprentissage précieux. 💪</p>
+                         </div>
+                         <div className="glass p-3 rounded-xl border-[#0055A4]/30 border text-center">
+                            <p className="text-white/60 text-[10px] font-bold uppercase tracking-widest">🇫🇷 Équipe de France : 16<sup>e</sup> / 36 pays 📈</p>
+                         </div>
+                      </div>
+                   </div>
+
+                   {/* Togyz Qumalaq Astana */}
+                   <div className="space-y-4">
+                      <div className="flex items-center gap-3">
+                         <div className="w-1 bg-white h-4"></div>
+                         <h4 className="text-sm font-black text-slate-200 uppercase tracking-widest">Discipline Togyz Qumalaq</h4>
+                      </div>
+                      <div className="space-y-3">
+                         <div className="glass p-4 rounded-2xl border-l-4 border-white/40">
+                            <p className="text-white font-black text-sm">🥉 Clara Sotoca : 13<sup>e</sup> place / 48 athlètes</p>
+                            <p className="text-[10px] text-slate-400 mt-1">Adaptabilité et talent dans des jeux variés. 🌟</p>
+                         </div>
+                         <div className="glass p-4 rounded-2xl border-l-4 border-slate-600">
+                            <p className="text-white font-black text-sm">Eric Sotoca : 42<sup>e</sup> place / 63 athlètes</p>
+                            <p className="text-[10px] text-slate-400 mt-1">Expérience enrichissante malgré des rounds intenses. 🔥</p>
+                         </div>
+                         <div className="glass p-3 rounded-xl border-white/10 border text-center">
+                            <p className="text-white/60 text-[10px] font-bold uppercase tracking-widest">🇫🇷 Équipe de France : 19<sup>e</sup> / 40 pays 🚀</p>
+                         </div>
+                      </div>
+                   </div>
+                </div>
               </div>
 
-              <div className="glass p-5 md:p-6 rounded-[2rem] border-t-4 border-[#0055A4] flex-grow shadow-xl">
-                <h4 className="font-black text-white text-sm md:text-base uppercase mb-2 leading-tight">Éric Sotoca</h4>
-                <div className="flex justify-between items-baseline mb-2">
-                  <p className="text-[#0055A4] text-[10px] md:text-xs font-black uppercase tracking-wider">22<sup>ème</sup> Mondial</p>
-                  <p className="text-slate-500 text-[10px] font-bold">Top Européen</p>
+              {/* Cannes Block */}
+              <div className="glass p-6 md:p-8 rounded-[2.5rem] border-t-8 border-[#EF4135] flex flex-col text-left group w-full">
+                <div className="flex justify-between items-start mb-6">
+                   <div>
+                      <h3 className="text-xl md:text-2xl font-black text-white uppercase italic tracking-tight">Cannes 2025</h3>
+                      <p className="text-[#EF4135] text-[10px] font-black uppercase tracking-widest">38<sup>e</sup> Festival Int. des Jeux</p>
+                   </div>
+                   <div className="w-10 h-10 md:w-12 md:h-12 bg-[#EF4135]/10 rounded-xl flex items-center justify-center border border-[#EF4135]/20">
+                      <Medal className="text-[#EF4135] w-6 h-6" />
+                   </div>
                 </div>
-                <p className="text-slate-400 text-xs md:text-sm font-light leading-relaxed">
-                  Confirmation du rang de la France au sommet de la compétition internationale.
-                </p>
+
+                <div className="space-y-6 flex-grow">
+                   {/* Awalé Cannes */}
+                   <div className="space-y-4">
+                      <div className="flex items-center gap-3">
+                         <div className="w-1 bg-[#D4AF37] h-4"></div>
+                         <h4 className="text-sm font-black text-slate-200 uppercase tracking-widest">Tournoi Int. Awalé</h4>
+                      </div>
+                      <div className="grid grid-cols-1 gap-2">
+                         <div className="flex justify-between items-center glass p-3 rounded-xl border-l-2 border-[#D4AF37]">
+                            <span className="text-[11px] font-black text-white uppercase tracking-wider">Clara Sotoca</span>
+                            <span className="text-[#D4AF37] font-black text-xs">🥈 2<sup>e</sup> place (Femmes) 👏</span>
+                         </div>
+                         <div className="flex justify-between items-center glass p-3 rounded-xl border-l-2 border-[#D4AF37]">
+                            <span className="text-[11px] font-black text-white uppercase tracking-wider">Eric Sotoca</span>
+                            <span className="text-[#D4AF37] font-black text-xs">🥈 2<sup>e</sup> place (Hommes) 💪</span>
+                         </div>
+                         <div className="flex justify-between items-center glass p-3 rounded-xl border-l-2 border-slate-600">
+                            <span className="text-[11px] font-black text-white uppercase tracking-wider opacity-60">Hélène Mimenza</span>
+                            <span className="text-slate-500 font-black text-[10px]">4<sup>e</sup> place (Femmes)</span>
+                         </div>
+                      </div>
+                   </div>
+
+                   {/* Togyz Qumalaq Cannes */}
+                   <div className="space-y-4">
+                      <div className="flex items-center gap-3">
+                         <div className="w-1 bg-white h-4"></div>
+                         <h4 className="text-sm font-black text-slate-200 uppercase tracking-widest">Togyz Qumalaq Mixte</h4>
+                      </div>
+                      <div className="grid grid-cols-1 gap-2">
+                         <div className="flex justify-between items-center glass p-3 rounded-xl border-l-2 border-white/60">
+                            <span className="text-[11px] font-black text-white uppercase tracking-wider">Clara Sotoca</span>
+                            <span className="text-white font-black text-xs">🥈 2<sup>e</sup> place 🌟</span>
+                         </div>
+                         <div className="flex justify-between items-center glass p-3 rounded-xl border-l-2 border-slate-600">
+                            <span className="text-[11px] font-black text-white uppercase tracking-wider opacity-60">Eric Sotoca</span>
+                            <span className="text-slate-500 font-black text-[10px]">4<sup>e</sup> place</span>
+                         </div>
+                         <div className="flex justify-between items-center glass p-3 rounded-xl border-l-2 border-slate-600">
+                            <span className="text-[11px] font-black text-white uppercase tracking-wider opacity-60">Hélène Mimenza</span>
+                            <span className="text-slate-500 font-black text-[10px]">6<sup>e</sup> place</span>
+                         </div>
+                      </div>
+                   </div>
+                   
+                   <p className="text-[9px] text-slate-500 italic mt-4">Prochain rendez-vous : Tournois du 2 & 3 mars 2025.</p>
+                </div>
               </div>
             </div>
           </div>
