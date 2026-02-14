@@ -78,9 +78,14 @@ const FacebookReel: React.FC = () => {
         <span>Instantanés Nomades</span>
       </div>
       
-      <h2 className="text-3xl md:text-5xl font-black mb-10 text-white uppercase italic tracking-tighter leading-none">
+      <h2 className="text-3xl md:text-5xl font-black mb-8 text-white uppercase italic tracking-tighter leading-none">
          L'aventure <br/><span className="text-[#1877F2]">en mouvement</span>
       </h2>
+
+      <div className="flex items-center gap-3 mb-10 bg-[#1877F2]/10 border border-[#1877F2]/30 px-6 py-3 rounded-full shadow-[0_0_30px_rgba(24,119,242,0.1)]">
+        <Users2 className="w-5 h-5 text-[#1877F2]" />
+        <span className="text-xs md:text-sm font-black uppercase tracking-[0.2em] text-white">Stade de 30 000 places</span>
+      </div>
 
       <div className="w-full flex justify-center">
         <div className="glass p-2 md:p-4 rounded-[2.5rem] border-white/10 shadow-2xl overflow-hidden w-full max-w-5xl">
@@ -101,7 +106,7 @@ const FacebookReel: React.FC = () => {
       </div>
       
       <p className="mt-10 text-slate-400 text-sm md:text-base font-light italic max-w-2xl mx-auto leading-relaxed">
-        Découvrez la délégation française en entier, fièrement présentée lors de la cérémonie d'ouverture des World Nomad Games 2024 à Astana, parmi les nations du monde entier.
+        Découvrez la délégation française en entier, fièrement présentée lors de la cérémonie d'ouverture des World Nomad Games 2024 à Astana, parmi les nations du monde entier et devant 30 000 personnes.
       </p>
     </section>
   );
@@ -269,7 +274,6 @@ const App: React.FC = () => {
           </div>
           
           <div className="w-full overflow-y-auto max-h-[85vh] pr-2 custom-scrollbar space-y-8">
-            {/* Image Highlight - Fully visible press article */}
             <div className="w-full relative group overflow-hidden rounded-[2.5rem] glass p-2 border-[#D4AF37]/20 border">
               <div className="w-full overflow-hidden rounded-[2.2rem] relative bg-white/5 shadow-2xl flex flex-col">
                 <img 
@@ -286,7 +290,6 @@ const App: React.FC = () => {
             </div>
 
             <div className="flex flex-col gap-8 w-full max-w-4xl mx-auto pb-12">
-              {/* World Nomad Games Block */}
               <div className="glass p-6 md:p-8 rounded-[2.5rem] border-t-8 border-[#0055A4] flex flex-col text-left group w-full">
                 <div className="flex justify-between items-start mb-6">
                    <div>
@@ -299,7 +302,6 @@ const App: React.FC = () => {
                 </div>
 
                 <div className="space-y-6 flex-grow">
-                   {/* Awalé Astana */}
                    <div className="space-y-4">
                       <div className="flex items-center gap-3">
                          <div className="w-1 bg-[#D4AF37] h-4"></div>
@@ -320,7 +322,6 @@ const App: React.FC = () => {
                       </div>
                    </div>
 
-                   {/* Togyz Qumalaq Astana */}
                    <div className="space-y-4">
                       <div className="flex items-center gap-3">
                          <div className="w-1 bg-white h-4"></div>
@@ -343,7 +344,6 @@ const App: React.FC = () => {
                 </div>
               </div>
 
-              {/* Cannes Block */}
               <div className="glass p-6 md:p-8 rounded-[2.5rem] border-t-8 border-[#EF4135] flex flex-col text-left group w-full">
                 <div className="flex justify-between items-start mb-6">
                    <div>
@@ -356,7 +356,6 @@ const App: React.FC = () => {
                 </div>
 
                 <div className="space-y-6 flex-grow">
-                   {/* Awalé Cannes */}
                    <div className="space-y-4">
                       <div className="flex items-center gap-3">
                          <div className="w-1 bg-[#D4AF37] h-4"></div>
@@ -378,7 +377,6 @@ const App: React.FC = () => {
                       </div>
                    </div>
 
-                   {/* Togyz Qumalaq Cannes */}
                    <div className="space-y-4">
                       <div className="flex items-center gap-3">
                          <div className="w-1 bg-white h-4"></div>
