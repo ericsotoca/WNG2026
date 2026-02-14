@@ -534,12 +534,12 @@ const App: React.FC = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 md:gap-8 w-full">
              {[
                { date: "2025", label: "Préparation", desc: "Entraînements intensifs et ateliers PACA." },
-               { date: "H1 2026", label: "Excellence", desc: "Tournois préparatoires internationaux." },
+               { date: "Fév. 2026", label: "Excellence", desc: "Tournois préparatoires internationaux (Cannes)." },
                { date: "Été 2026", label: "Activation", desc: "Démonstrations publiques tricolores." },
                { date: "Sept 2026", label: "Kirghizistan", desc: "World Nomad Games - La Compétition." }
              ].map((s, i) => (
                <div key={i} className="flex flex-col items-center px-2">
-                  <div className="w-12 h-12 rounded-full glass border border-white/20 flex items-center justify-center font-black text-xs text-[#D4AF37] mb-4">{s.date}</div>
+                  <div className="w-12 h-12 rounded-full glass border border-white/20 flex items-center justify-center font-black text-[9px] text-[#D4AF37] mb-4 text-center leading-none px-1">{s.date}</div>
                   <h4 className="font-bold text-white text-sm mb-1 uppercase tracking-widest leading-tight">{s.label}</h4>
                   <p className="text-xs text-slate-500 font-medium px-2">{s.desc}</p>
                </div>
