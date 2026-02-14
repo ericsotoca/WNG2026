@@ -147,7 +147,7 @@ const App: React.FC = () => {
             </div>
             <div className="glass p-8 rounded-3xl border-t-4 border-[#EF4135] group hover:bg-white/5 transition-all">
               <Users className="text-[#EF4135] w-12 h-12 mx-auto mb-6" />
-              <div className="text-5xl font-black text-white mb-2">2500</div>
+              <div className="text-5xl font-black text-white mb-2">3000</div>
               <p className="text-slate-400 font-medium uppercase text-xs tracking-widest">Athlètes d'élite</p>
             </div>
           </div>
