@@ -285,7 +285,7 @@ const App: React.FC = () => {
               </div>
             </div>
 
-            <div className="flex flex-col gap-8 w-full max-w-4xl mx-auto">
+            <div className="flex flex-col gap-8 w-full max-w-4xl mx-auto pb-12">
               {/* World Nomad Games Block */}
               <div className="glass p-6 md:p-8 rounded-[2.5rem] border-t-8 border-[#0055A4] flex flex-col text-left group w-full">
                 <div className="flex justify-between items-start mb-6">
@@ -400,7 +400,9 @@ const App: React.FC = () => {
                       </div>
                    </div>
                    
-                   <p className="text-[9px] text-slate-500 italic mt-4">Prochain rendez-vous : Tournois du 2 & 3 mars 2025.</p>
+                   <p className="text-[11px] text-[#D4AF37] font-black uppercase tracking-widest mt-6 border-t border-white/10 pt-4">
+                     Prochain rendez-vous : Tournois du 27 février au 1er mars 2026.
+                   </p>
                 </div>
               </div>
             </div>
