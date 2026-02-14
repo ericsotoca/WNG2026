@@ -266,26 +266,26 @@ const App: React.FC = () => {
           </h2>
           
           <div className="w-full grid grid-cols-1 lg:grid-cols-12 gap-6 items-stretch">
-            <div className="lg:col-span-8 relative group overflow-hidden rounded-[2.5rem] glass p-2 border-[#D4AF37]/20 border">
-              <div className="w-full h-full min-h-[220px] md:min-h-[250px] overflow-hidden rounded-[2.2rem] relative bg-white/5">
+            <div className="lg:col-span-8 relative group overflow-hidden rounded-[2.5rem] glass p-2 border-[#D4AF37]/20 border min-h-[250px] md:min-h-[350px]">
+              <div className="w-full h-full overflow-hidden rounded-[2.2rem] relative bg-white/5">
                 <img 
                   src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXeC2JDBmioqG3ZQAnWBQvY-m9DRJ2_2hsGneA1SNwgny551XeauuxCkoJu2nKDMCNAjxDan47nxYf_2bxf3N0UYpnHPjOw0dtsFj252gcQiPkMz5aI1NemiXrQozwG8ptYPP72CdswPaOgr4SgNysTnS4?key=4Mj4bJk_67OZUgFqKr5Mhw" 
                   alt="Délégation France Press" 
-                  className="w-full h-full object-contain grayscale transition-all duration-700 group-hover:grayscale-0 group-hover:scale-105" 
+                  className="w-full h-full object-cover grayscale transition-all duration-700 group-hover:grayscale-0 group-hover:scale-105" 
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#020617]/80 via-transparent to-transparent opacity-60"></div>
-                <div className="absolute bottom-6 left-8 right-8 text-left hidden md:block">
+                <div className="absolute inset-0 bg-gradient-to-t from-[#020617]/90 via-transparent to-transparent opacity-80"></div>
+                <div className="absolute bottom-6 left-8 right-8 text-left">
                   <div className="tricolore-strip mb-3"></div>
-                  <h3 className="text-xl font-black text-white uppercase italic tracking-tighter">Une Synergie Historique</h3>
+                  <h3 className="text-xl md:text-2xl font-black text-white uppercase italic tracking-tighter leading-tight">Une Synergie <br className="md:hidden"/>Historique</h3>
                   <p className="text-white/60 text-[10px] font-bold uppercase tracking-[0.2em] mt-1">Délégation Officielle France • World Nomad Games</p>
                 </div>
               </div>
             </div>
 
             <div className="lg:col-span-4 flex flex-col gap-4 text-left">
-              <div className="glass p-5 md:p-6 rounded-[2rem] border-t-4 border-[#D4AF37] flex-grow">
+              <div className="glass p-5 md:p-6 rounded-[2rem] border-t-4 border-[#D4AF37] flex-grow shadow-xl">
                 <div className="flex items-center gap-4 mb-4">
-                  <div className="w-10 h-10 md:w-12 md:h-12 rounded-full border-2 border-[#D4AF37] p-0.5 overflow-hidden">
+                  <div className="w-10 h-10 md:w-12 md:h-12 rounded-full border-2 border-[#D4AF37] p-0.5 overflow-hidden shadow-lg">
                     <img src="https://image.jimcdn.com/cdn-cgi/image/width=320%2Cheight=10000%2Cfit=contain%2Cformat=png%2C/app/cms/storage/image/path/sb3e54bbe27069320/image/i5acaa91710cbb300/version/1771072008/image.png" className="w-full h-full object-cover rounded-full" />
                   </div>
                   <div>
@@ -298,8 +298,8 @@ const App: React.FC = () => {
                 </p>
               </div>
 
-              <div className="glass p-5 md:p-6 rounded-[2rem] border-t-4 border-[#0055A4] flex-grow">
-                <h4 className="font-black text-white text-sm uppercase mb-2">Éric Sotoca</h4>
+              <div className="glass p-5 md:p-6 rounded-[2rem] border-t-4 border-[#0055A4] flex-grow shadow-xl">
+                <h4 className="font-black text-white text-sm md:text-base uppercase mb-2 leading-tight">Éric Sotoca</h4>
                 <div className="flex justify-between items-baseline mb-2">
                   <p className="text-[#0055A4] text-[10px] md:text-xs font-black uppercase tracking-wider">22<sup>ème</sup> Mondial</p>
                   <p className="text-slate-500 text-[10px] font-bold">Top Européen</p>
@@ -599,14 +599,12 @@ const App: React.FC = () => {
 
   return (
     <div className="h-screen w-full flex flex-col bg-[#020617] text-slate-100 overflow-hidden nomad-pattern relative">
-      {/* Barre de progression fixe en haut */}
       <div className="fixed top-0 left-0 w-full z-50">
         <div className="w-full bg-white/5 h-1">
           <div className="progress-bar" style={{ width: `${progress}%` }}></div>
         </div>
       </div>
 
-      {/* Navigation fixe en bas */}
       <div className="fixed bottom-0 left-0 w-full z-40 p-4 md:p-8 flex justify-between items-center pointer-events-none mb-4">
         <button 
           onClick={prevSlide}
@@ -627,18 +625,15 @@ const App: React.FC = () => {
         </button>
       </div>
 
-      {/* Éléments de fond */}
       <div className="absolute inset-0 -z-10 opacity-20 pointer-events-none">
         <div className="absolute top-1/4 -left-20 w-[300px] md:w-[600px] h-[300px] md:h-[600px] bg-[#0055A4] rounded-full blur-[100px] md:blur-[180px]"></div>
         <div className="absolute bottom-1/4 -right-20 w-[300px] md:w-[600px] h-[300px] md:h-[600px] bg-[#EF4135] rounded-full blur-[100px] md:blur-[180px]"></div>
       </div>
 
-      {/* Conteneur principal avec défilement optimisé */}
       <main className="flex-grow overflow-y-auto overflow-x-hidden scroll-smooth flex flex-col items-center">
         <div className="w-full flex items-center justify-center min-h-full px-4 md:px-12 py-16 md:py-24">
            <div className="w-full flex flex-col items-center my-auto">
               {renderSlide(currentSlide)}
-              {/* Spacer pour éviter que le contenu ne soit caché par la navigation mobile */}
               <div className="h-28 md:hidden w-full flex-shrink-0"></div>
            </div>
         </div>
