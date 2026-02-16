@@ -6,7 +6,7 @@ import {
   ShieldCheck, ArrowRight, Eye, HandMetal, MapPinned, Users2, PlusCircle, 
   Landmark, Shield, Phone, LayoutGrid, Layers, Grid, Sparkles, Zap, 
   History, Target, PlayCircle, ExternalLink, RefreshCw, Play, Quote, Gift,
-  Facebook, Medal
+  Facebook, Medal, Mail
 } from 'lucide-react';
 
 const VideoPlayer: React.FC = () => {
@@ -296,7 +296,7 @@ const App: React.FC = () => {
                       <h3 className="text-xl md:text-2xl font-black text-white uppercase italic tracking-tight">Astana 2024</h3>
                       <p className="text-[#0055A4] text-[10px] font-black uppercase tracking-widest">World Nomad Games • Kazakhstan</p>
                    </div>
-                   <div className="w-10 h-10 md:w-12 md:h-12 bg-[#0055A4]/10 rounded-xl flex items-center justify-center border border-[#0055A4]/20">
+                   <div className="w-10 h-10 md:w-12 h-10 md:h-12 bg-[#0055A4]/10 rounded-xl flex items-center justify-center border border-[#0055A4]/20">
                       <Globe className="text-[#0055A4] w-6 h-6" />
                    </div>
                 </div>
@@ -350,7 +350,7 @@ const App: React.FC = () => {
                       <h3 className="text-xl md:text-2xl font-black text-white uppercase italic tracking-tight">Cannes 2025</h3>
                       <p className="text-[#EF4135] text-[10px] font-black uppercase tracking-widest">38<sup>e</sup> Festival Int. des Jeux</p>
                    </div>
-                   <div className="w-10 h-10 md:w-12 md:h-12 bg-[#EF4135]/10 rounded-xl flex items-center justify-center border border-[#EF4135]/20">
+                   <div className="w-10 h-10 md:w-12 h-10 md:h-12 bg-[#EF4135]/10 rounded-xl flex items-center justify-center border border-[#EF4135]/20">
                       <Medal className="text-[#EF4135] w-6 h-6" />
                    </div>
                 </div>
@@ -664,28 +664,42 @@ const App: React.FC = () => {
           <div className="flex-1 space-y-6 text-left">
             <div className="tricolore-strip mb-4"></div>
             <h2 className="text-3xl md:text-5xl font-black text-white leading-tight uppercase italic tracking-tighter">Écrivons l'histoire <br/><span className="text-[#D4AF37]">ensemble.</span></h2>
+            <p className="text-slate-400 text-sm md:text-base leading-relaxed font-light mb-4">
+              Rejoignez une aventure humaine, culturelle et sportive sans précédent en soutenant la délégation française.
+            </p>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 md:gap-4">
-              <a href="tel:0616080174" className="flex items-center gap-4 glass p-5 rounded-2xl hover:border-[#0055A4] transition-all active:scale-95">
-                <div className="w-10 h-10 bg-[#0055A4]/20 rounded-xl flex items-center justify-center"><Phone className="text-[#0055A4] w-5 h-5" /></div>
+              <a href="tel:0616080174" className="flex items-center gap-4 glass p-5 rounded-2xl hover:border-[#0055A4] transition-all active:scale-95 group">
+                <div className="w-10 h-10 bg-[#0055A4]/20 rounded-xl flex items-center justify-center group-hover:bg-[#0055A4] transition-colors"><Phone className="text-[#0055A4] group-hover:text-white w-5 h-5" /></div>
                 <div><p className="text-xs text-slate-500 uppercase font-black tracking-widest">Hélène Mimenza</p><p className="font-black text-white text-sm md:text-base tracking-tighter">06 16 08 01 74</p></div>
               </a>
-              <a href="tel:0651332209" className="flex items-center gap-4 glass p-5 rounded-2xl hover:border-[#EF4135] transition-all active:scale-95">
-                <div className="w-10 h-10 bg-[#EF4135]/20 rounded-xl flex items-center justify-center"><Phone className="text-[#EF4135] w-5 h-5" /></div>
+              <a href="tel:0651332209" className="flex items-center gap-4 glass p-5 rounded-2xl hover:border-[#EF4135] transition-all active:scale-95 group">
+                <div className="w-10 h-10 bg-[#EF4135]/20 rounded-xl flex items-center justify-center group-hover:bg-[#EF4135] transition-colors"><Phone className="text-[#EF4135] group-hover:text-white w-5 h-5" /></div>
                 <div><p className="text-xs text-slate-500 uppercase font-black tracking-widest">Éric Sotoca</p><p className="font-black text-white text-sm md:text-base tracking-tighter">06 51 33 22 09</p></div>
               </a>
             </div>
           </div>
           <div className="flex-1 w-full">
-            <div className="glass p-8 md:p-10 rounded-[2.5rem] border-white/20 relative">
-              <h3 className="text-xl font-black text-white mb-6 uppercase italic tracking-widest">Contact Mécénat</h3>
-              <form className="space-y-4" onSubmit={(e) => { e.preventDefault(); alert('Message envoyé ! Nous reviendrons vers vous très vite.'); }}>
-                <input type="text" placeholder="Organisation / Entreprise" className="w-full bg-white/5 border border-white/10 rounded-xl p-4 md:p-5 focus:border-[#D4AF37] outline-none text-sm transition-all" />
-                <input type="email" placeholder="Email professionnel" className="w-full bg-white/5 border border-white/10 rounded-xl p-4 md:p-5 focus:border-[#D4AF37] outline-none text-sm transition-all" />
-                <textarea rows={3} placeholder="Votre projet..." className="w-full bg-white/5 border border-white/10 rounded-xl p-4 md:p-5 focus:border-[#D4AF37] outline-none text-sm transition-all resize-none"></textarea>
-                <button className="w-full bg-gradient-to-r from-[#0055A4] via-white to-[#EF4135] py-5 rounded-xl text-black font-black uppercase text-base hover:scale-[1.02] active:scale-95 transition-all shadow-xl tracking-widest">
-                  Valider
-                </button>
-              </form>
+            <div className="glass p-8 md:p-12 rounded-[2.5rem] border-white/20 relative text-center flex flex-col items-center">
+              <div className="w-20 h-20 bg-[#D4AF37]/10 rounded-full flex items-center justify-center mb-6 border border-[#D4AF37]/20">
+                <Mail className="w-10 h-10 text-[#D4AF37]" />
+              </div>
+              <h3 className="text-xl md:text-2xl font-black text-white mb-4 uppercase italic tracking-widest">Contact Mécénat</h3>
+              <p className="text-slate-400 text-sm md:text-base mb-8 leading-relaxed font-light">
+                Pour toute demande d'information, de partenariat ou de mécénat, contactez notre équipe par email :
+              </p>
+              <a 
+                href="mailto:eric.sotoca@gmail.com" 
+                className="w-full bg-white/5 border border-white/20 hover:bg-white/10 hover:border-[#D4AF37] transition-all rounded-2xl p-6 mb-8 block group"
+              >
+                <p className="text-[10px] uppercase font-bold text-slate-500 tracking-[0.3em] mb-1">Cliquer pour envoyer un mail</p>
+                <p className="text-lg md:text-xl font-black text-white tracking-tight group-hover:text-[#D4AF37]">eric.sotoca@gmail.com</p>
+              </a>
+              <div className="flex items-center gap-3 px-6 py-4 bg-[#EF4135]/10 border border-[#EF4135]/30 rounded-full">
+                <Zap className="w-4 h-4 text-[#EF4135] animate-pulse" />
+                <span className="text-[10px] md:text-xs font-black uppercase tracking-[0.2em] text-white">
+                  Privilégiez le téléphone pour une réponse immédiate
+                </span>
+              </div>
             </div>
           </div>
         </section>
