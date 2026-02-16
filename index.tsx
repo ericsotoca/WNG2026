@@ -445,7 +445,7 @@ const App: React.FC = () => {
           <div className="grid grid-cols-2 md:grid-cols-5 gap-6 md:gap-8 w-full">
             {[
               { name: "Hélène Mimenza", role: "Coach & Joueuse", c: "#0055A4", id: "h1", img: "https://image.jimcdn.com/cdn-cgi/image/width=169%2Cheight=10000%2Cfit=contain%2Cformat=png%2C/app/cms/storage/image/path/sb3e54bbe27069320/image/i2aed5628acffc17f/version/1771154404/image.png" },
-              { name: "Clara Sotoca", role: "Joueuse Élite", c: "#D4AF37", id: "h2", img: "https://image.jimcdn.com/cdn-cgi/image/width=203%2Cheight=10000%2Cfit=contain%2Cformat=png%2C/app/cms/storage/image/path/sb3e54bbe27069320/image/idf7e5a5079025009/version/1771154409/image.png" },
+              { name: "Clara Sotoca", role: "Joueuse Élite", c: "#D4AF37", id: "h2", img: "https://image.jimcdn.com/cdn-cgi/image/width=205%2Cheight=10000%2Cfit=contain%2Cformat=png%2C/app/cms/storage/image/path/sb3e54bbe27069320/image/i03fc0faf2a277911/version/1771271998/image.png" },
               { name: "Bénédicte V.O.", role: "Joueuse", c: "#EF4135", id: "h3", img: "https://image.jimcdn.com/cdn-cgi/image//app/cms/storage/image/path/sb3e54bbe27069320/image/i88365be2b4babe8b/version/1771154280/image.png" },
               { name: "Colette Gueirard", role: "Joueuse", c: "#0055A4", id: "h4", img: "https://image.jimcdn.com/cdn-cgi/image/width=189%2Cheight=10000%2Cfit=contain%2Cformat=png%2C/app/cms/storage/image/path/sb3e54bbe27069320/image/i47b56a7937366578/version/1771154808/image.png" },
               { name: "Éric Sotoca", role: "Dir. Tech & Joueur", c: "#EF4135", id: "h5", img: "https://image.jimcdn.com/cdn-cgi/image/width=184%2Cheight=10000%2Cfit=contain%2Cformat=jpg%2C/app/cms/storage/image/path/sb3e54bbe27069320/image/ie5433b73186127b3/version/1771154000/image.jpg" }
@@ -533,7 +533,7 @@ const App: React.FC = () => {
              {[
                { date: "2025", label: "Préparation", desc: "Entraînements intensifs et ateliers PACA." },
                { date: "Fév. 2026", label: "Excellence", desc: "Tournois préparatoires internationaux (Cannes)." },
-               { date: "Été 2026", label: "Activation", desc: "Démonstrations publiques tricolores." },
+               { date: "Été 2026", label: "DEMONSTRATION", desc: "Démonstrations publiques tricolores." },
                { date: "Sept 2026", label: "Kirghizistan", desc: "World Nomad Games - La Compétition." }
              ].map((s, i) => (
                <div key={i} className="flex flex-col items-center px-2">
@@ -583,8 +583,8 @@ const App: React.FC = () => {
             {[
               { icon: Eye, title: "Visibilité", desc: "Audience de 50 millions." },
               { icon: Award, title: "Prestige", desc: "Histoire tricolore unique." },
-              { icon: MapPinned, title: "Territoire", desc: "Ancrage PACA et Alpes." },
-              { icon: Users2, title: "Impact", desc: "Patrimoine mondial UNESCO." }
+              { icon: MapPinned, title: "Territoire", desc: "Ancrage PACA, Alpes & Ile de France." },
+              { icon: Users2, title: "Impact", desc: "Impact RSE : Soutien au patrimoine mondial UNESCO." }
             ].map((item, i) => (
               <div key={i} className="glass p-5 md:p-6 rounded-2xl group hover:bg-white/5 transition-all">
                  <item.icon className="w-8 md:w-10 h-8 md:h-10 text-[#D4AF37] mx-auto mb-4" />
@@ -601,7 +601,7 @@ const App: React.FC = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 w-full text-left">
             <div className="glass p-6 md:p-8 rounded-3xl flex flex-col h-full border border-white/10">
                <h3 className="text-sm md:text-base font-black text-slate-400 uppercase mb-2 tracking-widest">Bronze</h3>
-               <p className="text-3xl md:text-4xl font-black text-white mb-6">500 €</p>
+               <p className="text-3xl md:text-4xl font-black text-white mb-6">Dons libre</p>
                <ul className="text-xs space-y-3 text-slate-400 mb-8 flex-grow">
                  <li className="flex gap-2"><Check className="text-[#0055A4] w-4 h-4 mt-0.5" /> Logo sur site web</li>
                  <li className="flex gap-2"><Check className="text-[#0055A4] w-4 h-4 mt-0.5" /> Mentions réseaux</li>
@@ -612,7 +612,7 @@ const App: React.FC = () => {
             <div className="glass p-6 md:p-8 rounded-3xl flex flex-col h-full border-2 border-[#D4AF37] md:scale-105 bg-white/5 shadow-2xl">
                <div className="bg-[#D4AF37] text-black text-[10px] font-black px-4 py-1 rounded-full w-fit mb-4 uppercase">Populaire</div>
                <h3 className="text-sm md:text-base font-black text-white uppercase mb-2 tracking-widest">Argent</h3>
-               <p className="text-3xl md:text-4xl font-black text-white mb-6">1 000 €</p>
+               <p className="text-3xl md:text-4xl font-black text-white mb-6">500€</p>
                <ul className="text-xs space-y-3 text-white/80 mb-8 flex-grow">
                  <li className="flex gap-2"><Check className="text-[#D4AF37] w-4 h-4 mt-0.5" /> Pack Bronze Inclus</li>
                  <li className="flex gap-2"><Check className="text-[#D4AF37] w-4 h-4 mt-0.5" /> Logo Tenue Officielle</li>
@@ -622,10 +622,10 @@ const App: React.FC = () => {
             </div>
             <div className="glass p-6 md:p-8 rounded-3xl flex flex-col h-full border border-white/5">
                <h3 className="text-sm md:text-base font-black text-[#EF4135] uppercase mb-2 tracking-widest">Or / Platine</h3>
-               <p className="text-3xl md:text-4xl font-black text-white mb-6">1 500 € +</p>
+               <p className="text-3xl md:text-4xl font-black text-white mb-6">1000€ +</p>
                <ul className="text-xs space-y-3 text-slate-400 mb-8 flex-grow">
                  <li className="flex gap-2"><Check className="text-[#EF4135] w-4 h-4 mt-0.5" /> Pack Argent Inclus</li>
-                 <li className="flex gap-2"><Check className="text-[#EF4135] w-4 h-4 mt-0.5" /> Atelier Team Building</li>
+                 <li className="flex gap-2"><Check className="text-[#EF4135] w-4 h-4 mt-0.5" /> Atelier Initiation Awalé</li>
                  <li className="flex gap-2"><Check className="text-[#EF4135] w-4 h-4 mt-0.5" /> Logo Principal</li>
                </ul>
                <button onClick={() => setCurrentSlide(15)} className="w-full py-4 rounded-xl border border-[#EF4135] text-[#EF4135] uppercase text-xs font-black tracking-widest hover:bg-[#EF4135]/10">Contact</button>
