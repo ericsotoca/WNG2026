@@ -481,7 +481,7 @@ const App: React.FC = () => {
               { 
                 name: "Mangala", 
                 c: "#EF4135", 
-                img: "https://ericsotoca.github.io/WNG2026/mangala.png",
+                img: "https://ericsotoca.github.io/WNG2026/mancala.png",
                 desc: "Héritage Ottoman inscrit à l'UNESCO. Symbole de sagesse et de partage, favorisant la réflexion croisée."
               }
             ].map((d, i) => (
