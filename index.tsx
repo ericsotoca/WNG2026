@@ -469,19 +469,19 @@ const App: React.FC = () => {
               { 
                 name: "Awalé", 
                 c: "#0055A4", 
-                img: "https://image.jimcdn.com/cdn-cgi/image/width=320%2Cheight=1024%2Cfit=contain%2Cformat=png%2C/app/cms/storage/image/path/sb3e54bbe27069320/image/i713f097bf29b1866/version/1771834665/image.png",
+                img: "https://ericsotoca.github.io/WNG2026/awale.png",
                 desc: "Stratégie millénaire d'origine africaine. Demande un calcul mental rapide et une vision tactique à long terme."
               },
               { 
                 name: "Togyz Qumalaq", 
                 c: "#D4AF37", 
-                img: "https://image.jimcdn.com/cdn-cgi/image/width=287%2Cheight=10000%2Cfit=contain%2Cformat=jpg%2C/app/cms/storage/image/path/sb3e54bbe27069320/image/i0ddc98f4df305c1c/version/1726758236/image.jpg",
+                img: "https://ericsotoca.github.io/WNG2026/togyz.png",
                 desc: "Jeu mathématique royal du Kazakhstan. Considéré comme l'un des mancalas les plus complexes au monde."
               },
               { 
                 name: "Mangala", 
                 c: "#EF4135", 
-                img: "https://image.jimcdn.com/cdn-cgi/image/width=259%2Cheight=10000%2Cfit=contain%2Cformat=png%2C/app/cms/storage/image/path/sb3e54bbe27069320/image/i0bc3a07451d7b742/version/1732526950/image.png",
+                img: "https://ericsotoca.github.io/WNG2026/mangala.png",
                 desc: "Héritage Ottoman inscrit à l'UNESCO. Symbole de sagesse et de partage, favorisant la réflexion croisée."
               }
             ].map((d, i) => (
