@@ -253,7 +253,7 @@ const App: React.FC = () => {
             <div className="lg:col-span-4 relative group rounded-[2rem] md:rounded-[3rem] overflow-hidden glass p-2 border-white/10 hidden lg:block">
               <div className="w-full h-full min-h-[500px] overflow-hidden rounded-[1.8rem] md:rounded-[2.5rem] relative bg-white/5">
                 <img 
-                  src="https://github.com/ericsotoca/WNG2026/presidente.png" 
+                  src="https://ericsotoca.github.io/WNG2026/presidente.png" 
                   alt="Hélène Mimenza - Portrait" 
                   className="w-full h-full object-cover grayscale transition-all duration-1000 group-hover:grayscale-0 group-hover:scale-105" 
                 />
