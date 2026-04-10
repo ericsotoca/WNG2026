@@ -444,11 +444,11 @@ const App: React.FC = () => {
           <h2 className="text-2xl md:text-3xl font-bold mb-10 text-white uppercase tracking-tighter text-center">La Délégation 2026</h2>
           <div className="grid grid-cols-2 md:grid-cols-5 gap-6 md:gap-8 w-full">
             {[
-              { name: "Hélène Mimenza", role: "Coach & Joueuse", c: "#0055A4", id: "h1", img: "https://image.jimcdn.com/cdn-cgi/image/width=169%2Cheight=10000%2Cfit=contain%2Cformat=png%2C/app/cms/storage/image/path/sb3e54bbe27069320/image/i2aed5628acffc17f/version/1771154404/image.png" },
-              { name: "Clara Sotoca", role: "Joueuse Élite", c: "#D4AF37", id: "h2", img: "https://image.jimcdn.com/cdn-cgi/image/width=205%2Cheight=10000%2Cfit=contain%2Cformat=png%2C/app/cms/storage/image/path/sb3e54bbe27069320/image/i03fc0faf2a277911/version/1771271998/image.png" },
-              { name: "Bénédicte V.O.", role: "Joueuse", c: "#EF4135", id: "h3", img: "https://image.jimcdn.com/cdn-cgi/image//app/cms/storage/image/path/sb3e54bbe27069320/image/i88365be2b4babe8b/version/1771154280/image.png" },
-              { name: "Colette Gueirard", role: "Joueuse", c: "#0055A4", id: "h4", img: "https://image.jimcdn.com/cdn-cgi/image/width=189%2Cheight=10000%2Cfit=contain%2Cformat=png%2C/app/cms/storage/image/path/sb3e54bbe27069320/image/i47b56a7937366578/version/1771154808/image.png" },
-              { name: "Éric Sotoca", role: "Dir. Tech & Joueur", c: "#EF4135", id: "h5", img: "https://image.jimcdn.com/cdn-cgi/image/width=184%2Cheight=10000%2Cfit=contain%2Cformat=jpg%2C/app/cms/storage/image/path/sb3e54bbe27069320/image/ie5433b73186127b3/version/1771154000/image.jpg" }
+              { name: "Hélène Mimenza", role: "Coach & Joueuse", c: "#0055A4", id: "h1", img: "https://ericsotoca.github.io/WNG2026/helene.png" },
+              { name: "Clara Sotoca", role: "Joueuse Élite", c: "#D4AF37", id: "h2", img: "https://ericsotoca.github.io/WNG2026/clara.png" },
+              { name: "Bénédicte V.O.", role: "Joueuse", c: "#EF4135", id: "h3", img: "https://ericsotoca.github.io/WNG2026/benedicte.png" },
+              { name: "Colette Gueirard", role: "Joueuse", c: "#0055A4", id: "h4", img: "https://ericsotoca.github.io/WNG2026/colette.png" },
+              { name: "Éric Sotoca", role: "Dir. Tech & Joueur", c: "#EF4135", id: "h5", img: "https://ericsotoca.github.io/WNG2026/eric.png" }
             ].map((m, i) => (
               <div key={i} className="flex flex-col items-center group">
                 <div className={`w-24 h-24 md:w-36 md:h-36 rounded-2xl glass p-1 mb-4 border-b-4 transition-all group-hover:scale-105`} style={{borderColor: m.c}}>
