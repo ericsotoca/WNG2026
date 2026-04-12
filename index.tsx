@@ -566,7 +566,7 @@ const App: React.FC = () => {
                  </div>
               </div>
               <div className="space-y-5">
-                 <h4 className="text-lg md:text-xl font-bold text-[#D4AF37] italic uppercase">Opportunité RSE</h4>
+                 <h4 className="text-lg md:text-xl font-bold text-[#D4AF37] italic uppercase">Opportunité</h4>
                  <p className="text-slate-400 text-sm md:text-base leading-relaxed font-light">Investir dans un projet à haute valeur culturelle, humaine et éducative avec une visibilité mondiale unique basée sur un budget maîtrisé.</p>
                  <div className="inline-flex gap-4 items-center px-6 py-3 bg-white/5 rounded-full text-xs font-black uppercase text-white tracking-[0.2em]">
                     <ShieldCheck className="w-4 h-4 text-[#D4AF37]" />
@@ -584,7 +584,7 @@ const App: React.FC = () => {
               { icon: Eye, title: "Visibilité", desc: "Audience de 50 millions." },
               { icon: Award, title: "Prestige", desc: "Histoire tricolore unique." },
               { icon: MapPinned, title: "Territoire", desc: "Ancrage PACA, Alpes & Ile de France." },
-              { icon: Users2, title: "Impact", desc: "Impact RSE : Soutien au patrimoine mondial UNESCO." }
+              { icon: Users2, title: "Impact", desc: "Impact : Soutien au patrimoine mondial UNESCO." }
             ].map((item, i) => (
               <div key={i} className="glass p-5 md:p-6 rounded-2xl group hover:bg-white/5 transition-all">
                  <item.icon className="w-8 md:w-10 h-8 md:h-10 text-[#D4AF37] mx-auto mb-4" />
@@ -683,7 +683,7 @@ const App: React.FC = () => {
               <div className="w-20 h-20 bg-[#D4AF37]/10 rounded-full flex items-center justify-center mb-6 border border-[#D4AF37]/20">
                 <Mail className="w-10 h-10 text-[#D4AF37]" />
               </div>
-              <h3 className="text-xl md:text-2xl font-black text-white mb-4 uppercase italic tracking-widest">Contact Mécénat</h3>
+              <h3 className="text-xl md:text-2xl font-black text-white mb-4 uppercase italic tracking-widest">Contact</h3>
               <p className="text-slate-400 text-sm md:text-base mb-8 leading-relaxed font-light">
                 Pour toute demande d'information, de partenariat ou de mécénat, contactez notre équipe par email :
               </p>
