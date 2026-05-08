@@ -421,7 +421,108 @@ const App: React.FC = () => {
                    </div>
                    
                    <p className="text-[11px] text-[#D4AF37] font-black uppercase tracking-widest mt-6 border-t border-white/10 pt-4">
-                     Prochain rendez-vous : Tournois du 27 février au 1er mars 2026.
+                     ✅ Résultats Cannes 2026 disponibles ci-dessous.
+                   </p>
+                </div>
+              </div>
+
+              <div className="glass p-6 md:p-8 rounded-[2.5rem] border-t-8 border-[#D4AF37] flex flex-col text-left group w-full">
+                <div className="flex justify-between items-start mb-6">
+                   <div>
+                      <h3 className="text-xl md:text-2xl font-black text-white uppercase italic tracking-tight">Cannes 2026</h3>
+                      <p className="text-[#D4AF37] text-[10px] font-black uppercase tracking-widest">39<sup>e</sup> Festival Int. des Jeux</p>
+                   </div>
+                   <div className="w-10 h-10 md:w-12 h-10 md:h-12 bg-[#D4AF37]/10 rounded-xl flex items-center justify-center border border-[#D4AF37]/20">
+                      <Trophy className="text-[#D4AF37] w-6 h-6" />
+                   </div>
+                </div>
+
+                <div className="space-y-6 flex-grow">
+                   <div className="space-y-4">
+                      <div className="flex items-center gap-3">
+                         <div className="w-1 bg-[#D4AF37] h-4"></div>
+                         <h4 className="text-sm font-black text-slate-200 uppercase tracking-widest">OWARE (Awalé)</h4>
+                      </div>
+                      <div className="grid grid-cols-1 gap-2">
+                         <div className="flex justify-between items-center glass p-3 rounded-xl border-l-2 border-[#D4AF37]">
+                            <span className="text-[11px] font-black text-white uppercase tracking-wider">Eric Sotoca</span>
+                            <span className="text-[#D4AF37] font-black text-xs">🥈 2<sup>e</sup> place (Hommes) 💪</span>
+                         </div>
+                         <div className="flex justify-between items-center glass p-3 rounded-xl border-l-2 border-slate-600">
+                            <span className="text-[11px] font-black text-white uppercase tracking-wider opacity-60">Audrey Trub</span>
+                            <span className="text-slate-500 font-black text-[10px]">6<sup>e</sup> place</span>
+                         </div>
+                         <div className="flex justify-between items-center glass p-3 rounded-xl border-l-2 border-slate-600">
+                            <span className="text-[11px] font-black text-white uppercase tracking-wider opacity-60">Colette Gueirard</span>
+                            <span className="text-slate-500 font-black text-[10px]">10<sup>e</sup> place</span>
+                         </div>
+                         <div className="flex justify-between items-center glass p-3 rounded-xl border-l-2 border-slate-600">
+                            <span className="text-[11px] font-black text-white uppercase tracking-wider opacity-60">Hélène Mimenza</span>
+                            <span className="text-slate-500 font-black text-[10px]">12<sup>e</sup> place</span>
+                         </div>
+                         <div className="flex justify-between items-center glass p-3 rounded-xl border-l-2 border-slate-600">
+                            <span className="text-[11px] font-black text-white uppercase tracking-wider opacity-60">Bénédicte Opoix Vieillard</span>
+                            <span className="text-slate-500 font-black text-[10px]">14<sup>e</sup> place</span>
+                         </div>
+                      </div>
+                   </div>
+
+                   <div className="space-y-4">
+                      <div className="flex items-center gap-3">
+                         <div className="w-1 bg-white h-4"></div>
+                         <h4 className="text-sm font-black text-slate-200 uppercase tracking-widest">TOGYZ (Toguz Korgool / Togyz Qumalaq)</h4>
+                      </div>
+                      <div className="grid grid-cols-1 gap-2">
+                         <div className="flex justify-between items-center glass p-3 rounded-xl border-l-2 border-[#D4AF37]">
+                            <span className="text-[11px] font-black text-white uppercase tracking-wider">Eric Sotoca</span>
+                            <span className="text-[#D4AF37] font-black text-xs">🥈 2<sup>e</sup> place (Hommes) 💪</span>
+                         </div>
+                         <div className="flex justify-between items-center glass p-3 rounded-xl border-l-2 border-slate-600">
+                            <span className="text-[11px] font-black text-white uppercase tracking-wider opacity-60">Audrey Trub</span>
+                            <span className="text-slate-500 font-black text-[10px]">8<sup>e</sup> place</span>
+                         </div>
+                         <div className="flex justify-between items-center glass p-3 rounded-xl border-l-2 border-slate-600">
+                            <span className="text-[11px] font-black text-white uppercase tracking-wider opacity-60">Hélène Mimenza</span>
+                            <span className="text-slate-500 font-black text-[10px]">9<sup>e</sup> place</span>
+                         </div>
+                         <div className="flex justify-between items-center glass p-3 rounded-xl border-l-2 border-slate-600">
+                            <span className="text-[11px] font-black text-white uppercase tracking-wider opacity-60">Bénédicte Opoix Vieillard</span>
+                            <span className="text-slate-500 font-black text-[10px]">10<sup>e</sup> place</span>
+                         </div>
+                         <div className="flex justify-between items-center glass p-3 rounded-xl border-l-2 border-slate-600">
+                            <span className="text-[11px] font-black text-white uppercase tracking-wider opacity-60">Colette Gueirard</span>
+                            <span className="text-slate-500 font-black text-[10px]">11<sup>e</sup> place</span>
+                         </div>
+                      </div>
+                   </div>
+
+                   <div className="space-y-4">
+                      <div className="flex items-center gap-3">
+                         <div className="w-1 bg-[#EF4135] h-4"></div>
+                         <h4 className="text-sm font-black text-slate-200 uppercase tracking-widest">MANGALA</h4>
+                      </div>
+                      <div className="grid grid-cols-1 gap-2">
+                         <div className="flex justify-between items-center glass p-3 rounded-xl border-l-2 border-[#D4AF37]">
+                            <span className="text-[11px] font-black text-white uppercase tracking-wider">Eric Sotoca</span>
+                            <span className="text-[#D4AF37] font-black text-xs">🥈 2<sup>e</sup> place (Hommes) 💪</span>
+                         </div>
+                         <div className="flex justify-between items-center glass p-3 rounded-xl border-l-2 border-slate-600">
+                            <span className="text-[11px] font-black text-white uppercase tracking-wider opacity-60">Hélène Mimenza</span>
+                            <span className="text-slate-500 font-black text-[10px]">7<sup>e</sup> place</span>
+                         </div>
+                         <div className="flex justify-between items-center glass p-3 rounded-xl border-l-2 border-slate-600">
+                            <span className="text-[11px] font-black text-white uppercase tracking-wider opacity-60">Colette Gueirard</span>
+                            <span className="text-slate-500 font-black text-[10px]">9<sup>e</sup> place</span>
+                         </div>
+                         <div className="flex justify-between items-center glass p-3 rounded-xl border-l-2 border-slate-600">
+                            <span className="text-[11px] font-black text-white uppercase tracking-wider opacity-60">Bénédicte Opoix Vieillard</span>
+                            <span className="text-slate-500 font-black text-[10px]">10<sup>e</sup> place</span>
+                         </div>
+                      </div>
+                   </div>
+
+                   <p className="text-[11px] text-[#D4AF37] font-black uppercase tracking-widest mt-6 border-t border-white/10 pt-4">
+                     🏆 3× Vice-Champion (Hommes) — Oware, Togyz, Mangala
                    </p>
                 </div>
               </div>
