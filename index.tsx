@@ -442,20 +442,21 @@ const App: React.FC = () => {
       case 7: return (
         <section className="slide-enter flex flex-col items-center max-w-6xl w-full py-8">
           <h2 className="text-2xl md:text-3xl font-bold mb-10 text-white uppercase tracking-tighter text-center">La Délégation 2026</h2>
-          <div className="grid grid-cols-2 md:grid-cols-5 gap-6 md:gap-8 w-full">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 md:gap-8 w-full">
             {[
               { name: "Hélène Mimenza", role: "Coach & Joueuse", c: "#0055A4", id: "h1", img: "https://ericsotoca.github.io/WNG2026/helene.png" },
               { name: "Clara Sotoca", role: "Joueuse Élite", c: "#D4AF37", id: "h2", img: "https://ericsotoca.github.io/WNG2026/clara.png" },
               { name: "Bénédicte V.O.", role: "Joueuse", c: "#EF4135", id: "h3", img: "https://ericsotoca.github.io/WNG2026/benedicte.png" },
               { name: "Colette Gueirard", role: "Joueuse", c: "#0055A4", id: "h4", img: "https://ericsotoca.github.io/WNG2026/colette.png" },
+              { name: "Audrey Trub", role: "Joueuse", c: "#D4AF37", id: "h6", img: "https://ericsotoca.github.io/WNG2026/audrey.png" },
               { name: "Éric Sotoca", role: "Dir. Tech & Joueur", c: "#EF4135", id: "h5", img: "https://ericsotoca.github.io/WNG2026/eric.png" }
             ].map((m, i) => (
               <div key={i} className="flex flex-col items-center group">
-                <div className={`w-24 h-24 md:w-36 md:h-36 rounded-2xl glass p-1 mb-4 border-b-4 transition-all group-hover:scale-105`} style={{borderColor: m.c}}>
+                <div className={`w-24 h-24 md:w-32 md:h-32 rounded-2xl glass p-1 mb-4 border-b-4 transition-all group-hover:scale-105`} style={{borderColor: m.c}}>
                   <img src={m.img || `https://picsum.photos/seed/${m.id}/300`} className="w-full h-full object-cover rounded-xl grayscale group-hover:grayscale-0 transition-all shadow-lg" alt={m.name} />
                 </div>
-                <p className="font-bold text-[11px] md:text-sm text-white text-center leading-tight">{m.name}</p>
-                <p className={`text-[10px] md:text-[11px] uppercase font-black tracking-widest mt-1 opacity-60 text-center`} style={{color: m.c}}>{m.role}</p>
+                <p className="font-bold text-[11px] md:text-xs text-white text-center leading-tight">{m.name}</p>
+                <p className={`text-[10px] uppercase font-black tracking-widest mt-1 opacity-60 text-center`} style={{color: m.c}}>{m.role}</p>
               </div>
             ))}
           </div>
