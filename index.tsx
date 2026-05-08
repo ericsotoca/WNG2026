@@ -6,7 +6,7 @@ import {
   ShieldCheck, ArrowRight, Eye, HandMetal, MapPinned, Users2, PlusCircle, 
   Landmark, Shield, Phone, LayoutGrid, Layers, Grid, Sparkles, Zap, 
   History, Target, PlayCircle, ExternalLink, RefreshCw, Play, Quote, Gift,
-  Facebook, Medal, Mail
+  Facebook, Medal, Mail, Maximize2
 } from 'lucide-react';
 
 const VideoPlayer: React.FC = () => {
@@ -71,24 +71,38 @@ const VideoPlayer: React.FC = () => {
 };
 
 const FacebookReel: React.FC = () => {
+  const videoRef = React.useRef<HTMLDivElement>(null);
+
+  const handleFullscreen = () => {
+    const el = videoRef.current;
+    if (!el) return;
+    if (el.requestFullscreen) {
+      el.requestFullscreen().then(() => {
+        if (screen.orientation && typeof (screen.orientation as any).lock === 'function') {
+          (screen.orientation as any).lock('landscape').catch(() => {});
+        }
+      }).catch(() => {});
+    }
+  };
+
   return (
     <section className="slide-enter flex flex-col items-center max-w-6xl w-full text-center py-8">
-      <div className="flex items-center gap-3 mb-6 text-[#1877F2] font-black tracking-[0.3em] uppercase text-xs">
+      <div className="flex items-center gap-3 mb-4 text-[#1877F2] font-black tracking-[0.3em] uppercase text-xs">
         <Facebook className="w-6 h-6" />
         <span>Instantanés Nomades</span>
       </div>
       
-      <h2 className="text-3xl md:text-5xl font-black mb-8 text-white uppercase italic tracking-tighter leading-none">
+      <h2 className="text-2xl md:text-5xl font-black mb-4 text-white uppercase italic tracking-tighter leading-none">
          L'aventure <br/><span className="text-[#1877F2]">en mouvement</span>
       </h2>
 
-      <div className="flex items-center gap-3 mb-10 bg-[#1877F2]/10 border border-[#1877F2]/30 px-6 py-3 rounded-full shadow-[0_0_30px_rgba(24,119,242,0.1)]">
+      <div className="flex items-center gap-3 mb-4 bg-[#1877F2]/10 border border-[#1877F2]/30 px-6 py-3 rounded-full shadow-[0_0_30px_rgba(24,119,242,0.1)]">
         <Users2 className="w-5 h-5 text-[#1877F2]" />
         <span className="text-xs md:text-sm font-black uppercase tracking-[0.2em] text-white">Stade de 30 000 places</span>
       </div>
 
       <div className="w-full flex justify-center">
-        <div className="glass p-2 md:p-4 rounded-[2.5rem] border-white/10 shadow-2xl overflow-hidden w-full max-w-5xl">
+        <div ref={videoRef} className="glass p-2 md:p-4 rounded-[2.5rem] border-white/10 shadow-2xl overflow-hidden w-full max-w-5xl">
           <div className="relative w-full aspect-video md:aspect-[16/7] overflow-hidden rounded-[2rem]">
             <iframe 
               src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F897738559885442%2F&show_text=false&width=560&t=0" 
@@ -104,8 +118,16 @@ const FacebookReel: React.FC = () => {
           </div>
         </div>
       </div>
+
+      <button
+        onClick={handleFullscreen}
+        className="mt-4 flex items-center gap-3 bg-[#1877F2]/10 border border-[#1877F2]/30 px-6 py-3 rounded-full hover:bg-[#1877F2]/20 transition-all active:scale-95"
+      >
+        <Maximize2 className="w-4 h-4 text-[#1877F2]" />
+        <span className="text-xs font-black uppercase tracking-[0.2em] text-white">Plein écran paysage</span>
+      </button>
       
-      <p className="mt-10 text-slate-400 text-sm md:text-base font-light italic max-w-2xl mx-auto leading-relaxed">
+      <p className="mt-4 text-slate-400 text-sm md:text-base font-light italic max-w-2xl mx-auto leading-relaxed">
         Découvrez la délégation française, présentée lors de la cérémonie d'ouverture des World Nomad Games 2024 à Astana, devant 30 000 personnes !
       </p>
     </section>
@@ -170,24 +192,24 @@ const App: React.FC = () => {
         </section>
       );
       case 1: return (
-        <section className="slide-enter flex flex-col items-center text-center max-w-6xl w-full py-8">
-          <h2 className="text-3xl md:text-5xl font-bold mb-4 text-white uppercase tracking-tighter">Un Événement Mondial</h2>
-          <div className="tricolore-strip mx-auto mb-12"></div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 w-full">
-            <div className="glass p-8 rounded-3xl border-t-4 border-[#0055A4] group hover:bg-white/5 transition-all">
-              <Globe className="text-[#0055A4] w-12 h-12 mx-auto mb-6" />
-              <div className="text-4xl md:text-5xl font-black text-white mb-2">~100</div>
-              <p className="text-slate-400 font-medium uppercase text-xs tracking-widest">Pays représentés attendus</p>
+        <section className="slide-enter flex flex-col items-center text-center max-w-6xl w-full py-2 md:py-8">
+          <h2 className="text-xl md:text-5xl font-bold mb-2 md:mb-4 text-white uppercase tracking-tighter">Un Événement Mondial</h2>
+          <div className="tricolore-strip mx-auto mb-4 md:mb-12"></div>
+          <div className="grid grid-cols-3 gap-3 md:gap-8 w-full">
+            <div className="glass p-3 md:p-8 rounded-2xl md:rounded-3xl border-t-4 border-[#0055A4] group hover:bg-white/5 transition-all">
+              <Globe className="text-[#0055A4] w-6 h-6 md:w-12 md:h-12 mx-auto mb-2 md:mb-6" />
+              <div className="text-2xl md:text-5xl font-black text-white mb-1 md:mb-2">~100</div>
+              <p className="text-slate-400 font-medium uppercase text-[9px] md:text-xs tracking-widest leading-tight">Pays représentés</p>
             </div>
-            <div className="glass p-8 rounded-3xl border-t-4 border-white/40 group hover:bg-white/5 transition-all md:scale-105 bg-white/5 shadow-2xl">
-              <Users className="text-[#D4AF37] w-12 h-12 mx-auto mb-6" />
-              <div className="text-4xl md:text-5xl font-black text-white mb-2">~3 000</div>
-              <p className="text-slate-400 font-medium uppercase text-xs tracking-widest leading-relaxed">Athlètes & Invités<br/>(Kits & Packages)</p>
+            <div className="glass p-3 md:p-8 rounded-2xl md:rounded-3xl border-t-4 border-white/40 group hover:bg-white/5 transition-all bg-white/5 shadow-2xl">
+              <Users className="text-[#D4AF37] w-6 h-6 md:w-12 md:h-12 mx-auto mb-2 md:mb-6" />
+              <div className="text-2xl md:text-5xl font-black text-white mb-1 md:mb-2">~3 000</div>
+              <p className="text-slate-400 font-medium uppercase text-[9px] md:text-xs tracking-widest leading-tight">Athlètes & Invités</p>
             </div>
-            <div className="glass p-8 rounded-3xl border-t-4 border-[#EF4135] group hover:bg-white/5 transition-all">
-              <Tv className="text-[#EF4135] w-12 h-12 mx-auto mb-6" />
-              <div className="text-4xl md:text-5xl font-black text-white mb-2">50M+</div>
-              <p className="text-slate-400 font-medium uppercase text-xs tracking-widest">Audience Mondiale estimée</p>
+            <div className="glass p-3 md:p-8 rounded-2xl md:rounded-3xl border-t-4 border-[#EF4135] group hover:bg-white/5 transition-all">
+              <Tv className="text-[#EF4135] w-6 h-6 md:w-12 md:h-12 mx-auto mb-2 md:mb-6" />
+              <div className="text-2xl md:text-5xl font-black text-white mb-1 md:mb-2">50M+</div>
+              <p className="text-slate-400 font-medium uppercase text-[9px] md:text-xs tracking-widest leading-tight">Audience Mondiale</p>
             </div>
           </div>
         </section>
