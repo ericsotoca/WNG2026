@@ -676,17 +676,17 @@ const App: React.FC = () => {
               <div>
                  <div className="mb-6 text-center lg:text-left">
                     <p className="text-xs uppercase text-slate-500 font-black tracking-[0.2em] mb-1">Besoin Global</p>
-                    <p className="text-4xl md:text-6xl font-black text-white">4 615 <span className="text-xl md:text-2xl">€</span></p>
+                    <p className="text-4xl md:text-6xl font-black text-white">6 800 <span className="text-xl md:text-2xl">€</span></p>
                  </div>
                  <div className="space-y-4">
-                    <div className="flex justify-between text-xs font-bold uppercase tracking-widest text-slate-400"><span>Déplacements & Missions</span><span>2 750 €</span></div>
-                    <div className="h-2 bg-white/5 rounded-full overflow-hidden"><div className="h-full bg-[#0055A4] rounded-full w-[60%]"></div></div>
+                    <div className="flex justify-between text-xs font-bold uppercase tracking-widest text-slate-400"><span>Déplacements & Missions</span><span>3 900 €</span></div>
+                    <div className="h-2 bg-white/5 rounded-full overflow-hidden"><div className="h-full bg-[#0055A4] rounded-full w-[57%]"></div></div>
                     
-                    <div className="flex justify-between text-xs font-bold uppercase tracking-widest text-slate-400"><span>Logistique & Locations</span><span>1 050 €</span></div>
-                    <div className="h-2 bg-white/5 rounded-full overflow-hidden"><div className="h-full bg-[#EF4135] rounded-full w-[23%]"></div></div>
+                    <div className="flex justify-between text-xs font-bold uppercase tracking-widest text-slate-400"><span>Nourriture & Hébergement</span><span>2 100 €</span></div>
+                    <div className="h-2 bg-white/5 rounded-full overflow-hidden"><div className="h-full bg-[#EF4135] rounded-full w-[31%]"></div></div>
 
-                    <div className="flex justify-between text-xs font-bold uppercase tracking-widest text-slate-400"><span>Équipement & Frais</span><span>815 €</span></div>
-                    <div className="h-2 bg-white/5 rounded-full overflow-hidden"><div className="h-full bg-[#D4AF37] rounded-full w-[17%]"></div></div>
+                    <div className="flex justify-between text-xs font-bold uppercase tracking-widest text-slate-400"><span>Équipement & Frais</span><span>800 €</span></div>
+                    <div className="h-2 bg-white/5 rounded-full overflow-hidden"><div className="h-full bg-[#D4AF37] rounded-full w-[12%]"></div></div>
                  </div>
               </div>
               <div className="space-y-5">
